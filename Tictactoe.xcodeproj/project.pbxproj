@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608431D7F19D000942111 /* AppDelegate.swift */; };
+		7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608451D7F19D000942111 /* FirstViewController.swift */; };
+		7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608471D7F19D000942111 /* SecondViewController.swift */; };
+		7A56084B1D7F19D000942111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A5608491D7F19D000942111 /* Main.storyboard */; };
+		7A56084D1D7F19D200942111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A56084C1D7F19D200942111 /* Assets.xcassets */; };
+		7A5608501D7F19D200942111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A56084E1D7F19D200942111 /* LaunchScreen.storyboard */; };
+		7A56085B1D7F19D200942111 /* TictactoeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56085A1D7F19D200942111 /* TictactoeTests.swift */; };
+		7A5608661D7F19D200942111 /* TictactoeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608651D7F19D200942111 /* TictactoeUITests.swift */; };
+		7A5608741D7F1E9D00942111 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A5608731D7F1E9D00942111 /* GoogleService-Info.plist */; };
+		7A94E44D1D800C1F004044C5 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E4451D800C1F004044C5 /* Montserrat-Black.otf */; };
+		7A94E44E1D800C1F004044C5 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E4461D800C1F004044C5 /* Montserrat-Bold.otf */; };
+		7A94E44F1D800C1F004044C5 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E4471D800C1F004044C5 /* Montserrat-ExtraBold.otf */; };
+		7A94E4501D800C1F004044C5 /* Montserrat-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E4481D800C1F004044C5 /* Montserrat-ExtraLight.otf */; };
+		7A94E4511D800C1F004044C5 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E4491D800C1F004044C5 /* Montserrat-Medium.otf */; };
+		7A94E4521D800C1F004044C5 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E44A1D800C1F004044C5 /* Montserrat-Regular.otf */; };
+		7A94E4531D800C1F004044C5 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E44B1D800C1F004044C5 /* Montserrat-SemiBold.otf */; };
+		7A94E4541D800C1F004044C5 /* Montserrat-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E44C1D800C1F004044C5 /* Montserrat-Thin.otf */; };
+		7A94E4561D801189004044C5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E4551D801189004044C5 /* Podfile */; };
+		7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */; };
+		7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */; };
+		A803BE1699FF73C544592C3A /* Pods_TictactoeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */; };
+		C77C46627DFB6D906C4322FA /* Pods_TictactoeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A5608571D7F19D200942111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A5608381D7F19CF00942111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A56083F1D7F19CF00942111;
+			remoteInfo = Tictactoe;
+		};
+		7A5608621D7F19D200942111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A5608381D7F19CF00942111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A56083F1D7F19CF00942111;
+			remoteInfo = Tictactoe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27CF2FA42806F07964E63EA0 /* Pods-TictactoeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeTests/Pods-TictactoeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44BD07EFBB7E1B1A11A79FD6 /* Pods-TictactoeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeUITests/Pods-TictactoeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		676ECB94A3DDD3F716944798 /* Pods-Tictactoe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tictactoe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tictactoe/Pods-Tictactoe.release.xcconfig"; sourceTree = "<group>"; };
+		741603D1141F5E3AFD215AAE /* Pods_Tictactoe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tictactoe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5608401D7F19D000942111 /* Tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5608431D7F19D000942111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A5608451D7F19D000942111 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		7A5608471D7F19D000942111 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7A56084A1D7F19D000942111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A56084C1D7F19D200942111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A56084F1D7F19D200942111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A5608511D7F19D200942111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A5608561D7F19D200942111 /* TictactoeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TictactoeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A56085A1D7F19D200942111 /* TictactoeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TictactoeTests.swift; sourceTree = "<group>"; };
+		7A56085C1D7F19D200942111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A5608611D7F19D200942111 /* TictactoeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TictactoeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5608651D7F19D200942111 /* TictactoeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TictactoeUITests.swift; sourceTree = "<group>"; };
+		7A5608671D7F19D200942111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A5608731D7F1E9D00942111 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7A94E4451D800C1F004044C5 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.otf"; path = "Fonts/Montserrat-Black.otf"; sourceTree = "<group>"; };
+		7A94E4461D800C1F004044C5 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.otf"; path = "Fonts/Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		7A94E4471D800C1F004044C5 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.otf"; path = "Fonts/Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		7A94E4481D800C1F004044C5 /* Montserrat-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLight.otf"; path = "Fonts/Montserrat-ExtraLight.otf"; sourceTree = "<group>"; };
+		7A94E4491D800C1F004044C5 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.otf"; path = "Fonts/Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		7A94E44A1D800C1F004044C5 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "Fonts/Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		7A94E44B1D800C1F004044C5 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.otf"; path = "Fonts/Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		7A94E44C1D800C1F004044C5 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Thin.otf"; path = "Fonts/Montserrat-Thin.otf"; sourceTree = "<group>"; };
+		7A94E4551D801189004044C5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		7E9ACE4C3CCECF2FC55CF13A /* Pods-TictactoeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeTests/Pods-TictactoeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A7382F318AE05CA56DCE39D /* Pods-Tictactoe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tictactoe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tictactoe/Pods-Tictactoe.debug.xcconfig"; sourceTree = "<group>"; };
+		C52972C7DF60D499B9AF26E9 /* Pods-TictactoeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeUITests/Pods-TictactoeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TictactoeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TictactoeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A56083D1D7F19CF00942111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5608531D7F19D200942111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A803BE1699FF73C544592C3A /* Pods_TictactoeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A56085E1D7F19D200942111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77C46627DFB6D906C4322FA /* Pods_TictactoeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A5608371D7F19CF00942111 = {
+			isa = PBXGroup;
+			children = (
+				7A5608421D7F19D000942111 /* Tictactoe */,
+				7A5608591D7F19D200942111 /* TictactoeTests */,
+				7A5608641D7F19D200942111 /* TictactoeUITests */,
+				7A5608411D7F19D000942111 /* Products */,
+				7BA87D44A2992B30DB31867B /* Pods */,
+				D2E48D30476A92521C078A50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A5608411D7F19D000942111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A5608401D7F19D000942111 /* Tictactoe.app */,
+				7A5608561D7F19D200942111 /* TictactoeTests.xctest */,
+				7A5608611D7F19D200942111 /* TictactoeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A5608421D7F19D000942111 /* Tictactoe */ = {
+			isa = PBXGroup;
+			children = (
+				7AEFEF971D7FD09D009E65D8 /* Fonts */,
+				7A5608431D7F19D000942111 /* AppDelegate.swift */,
+				7A5608451D7F19D000942111 /* FirstViewController.swift */,
+				7A5608471D7F19D000942111 /* SecondViewController.swift */,
+				7A5608731D7F1E9D00942111 /* GoogleService-Info.plist */,
+				7A5608491D7F19D000942111 /* Main.storyboard */,
+				7A56084C1D7F19D200942111 /* Assets.xcassets */,
+				7A56084E1D7F19D200942111 /* LaunchScreen.storyboard */,
+				7A5608511D7F19D200942111 /* Info.plist */,
+				7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */,
+				7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */,
+			);
+			path = Tictactoe;
+			sourceTree = "<group>";
+		};
+		7A5608591D7F19D200942111 /* TictactoeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A56085A1D7F19D200942111 /* TictactoeTests.swift */,
+				7A56085C1D7F19D200942111 /* Info.plist */,
+			);
+			path = TictactoeTests;
+			sourceTree = "<group>";
+		};
+		7A5608641D7F19D200942111 /* TictactoeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A5608651D7F19D200942111 /* TictactoeUITests.swift */,
+				7A5608671D7F19D200942111 /* Info.plist */,
+			);
+			path = TictactoeUITests;
+			sourceTree = "<group>";
+		};
+		7AEFEF971D7FD09D009E65D8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7A94E4451D800C1F004044C5 /* Montserrat-Black.otf */,
+				7A94E4461D800C1F004044C5 /* Montserrat-Bold.otf */,
+				7A94E4471D800C1F004044C5 /* Montserrat-ExtraBold.otf */,
+				7A94E4481D800C1F004044C5 /* Montserrat-ExtraLight.otf */,
+				7A94E4491D800C1F004044C5 /* Montserrat-Medium.otf */,
+				7A94E44A1D800C1F004044C5 /* Montserrat-Regular.otf */,
+				7A94E44B1D800C1F004044C5 /* Montserrat-SemiBold.otf */,
+				7A94E44C1D800C1F004044C5 /* Montserrat-Thin.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		7BA87D44A2992B30DB31867B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A7382F318AE05CA56DCE39D /* Pods-Tictactoe.debug.xcconfig */,
+				676ECB94A3DDD3F716944798 /* Pods-Tictactoe.release.xcconfig */,
+				27CF2FA42806F07964E63EA0 /* Pods-TictactoeTests.debug.xcconfig */,
+				7E9ACE4C3CCECF2FC55CF13A /* Pods-TictactoeTests.release.xcconfig */,
+				C52972C7DF60D499B9AF26E9 /* Pods-TictactoeUITests.debug.xcconfig */,
+				44BD07EFBB7E1B1A11A79FD6 /* Pods-TictactoeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2E48D30476A92521C078A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A94E4551D801189004044C5 /* Podfile */,
+				741603D1141F5E3AFD215AAE /* Pods_Tictactoe.framework */,
+				CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */,
+				E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A56083F1D7F19CF00942111 /* Tictactoe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A56086A1D7F19D200942111 /* Build configuration list for PBXNativeTarget "Tictactoe" */;
+			buildPhases = (
+				53B07C22EFA2632384D8A343 /* [CP] Check Pods Manifest.lock */,
+				7A56083C1D7F19CF00942111 /* Sources */,
+				7A56083D1D7F19CF00942111 /* Frameworks */,
+				7A56083E1D7F19CF00942111 /* Resources */,
+				0C8B55F1D398D3B05F241F1D /* [CP] Embed Pods Frameworks */,
+				D28D7823D236AE132B5F0E65 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tictactoe;
+			productName = Tictactoe;
+			productReference = 7A5608401D7F19D000942111 /* Tictactoe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A5608551D7F19D200942111 /* TictactoeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A56086D1D7F19D200942111 /* Build configuration list for PBXNativeTarget "TictactoeTests" */;
+			buildPhases = (
+				895980979D2B03A585522A68 /* [CP] Check Pods Manifest.lock */,
+				7A5608521D7F19D200942111 /* Sources */,
+				7A5608531D7F19D200942111 /* Frameworks */,
+				7A5608541D7F19D200942111 /* Resources */,
+				6CACE67A75DF94E1CE3BF968 /* [CP] Embed Pods Frameworks */,
+				EB38EAC81B46EE8390F7FB6D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A5608581D7F19D200942111 /* PBXTargetDependency */,
+			);
+			name = TictactoeTests;
+			productName = TictactoeTests;
+			productReference = 7A5608561D7F19D200942111 /* TictactoeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A5608601D7F19D200942111 /* TictactoeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A5608701D7F19D200942111 /* Build configuration list for PBXNativeTarget "TictactoeUITests" */;
+			buildPhases = (
+				C2EF5C39609CCBD54EF676B0 /* [CP] Check Pods Manifest.lock */,
+				7A56085D1D7F19D200942111 /* Sources */,
+				7A56085E1D7F19D200942111 /* Frameworks */,
+				7A56085F1D7F19D200942111 /* Resources */,
+				7C70CA131DB4DB1EE0133AA0 /* [CP] Copy Pods Resources */,
+				3ED353FF64E0421F2C5D5DD0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A5608631D7F19D200942111 /* PBXTargetDependency */,
+			);
+			name = TictactoeUITests;
+			productName = TictactoeUITests;
+			productReference = 7A5608611D7F19D200942111 /* TictactoeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A5608381D7F19CF00942111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "W&C";
+				TargetAttributes = {
+					7A56083F1D7F19CF00942111 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 48P766KHT6;
+						ProvisioningStyle = Automatic;
+					};
+					7A5608551D7F19D200942111 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 48P766KHT6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7A56083F1D7F19CF00942111;
+					};
+					7A5608601D7F19D200942111 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 48P766KHT6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7A56083F1D7F19CF00942111;
+					};
+				};
+			};
+			buildConfigurationList = 7A56083B1D7F19CF00942111 /* Build configuration list for PBXProject "Tictactoe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A5608371D7F19CF00942111;
+			productRefGroup = 7A5608411D7F19D000942111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A56083F1D7F19CF00942111 /* Tictactoe */,
+				7A5608551D7F19D200942111 /* TictactoeTests */,
+				7A5608601D7F19D200942111 /* TictactoeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A56083E1D7F19CF00942111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A94E4501D800C1F004044C5 /* Montserrat-ExtraLight.otf in Resources */,
+				7A94E4541D800C1F004044C5 /* Montserrat-Thin.otf in Resources */,
+				7A94E44F1D800C1F004044C5 /* Montserrat-ExtraBold.otf in Resources */,
+				7A5608501D7F19D200942111 /* LaunchScreen.storyboard in Resources */,
+				7A94E4521D800C1F004044C5 /* Montserrat-Regular.otf in Resources */,
+				7A94E44D1D800C1F004044C5 /* Montserrat-Black.otf in Resources */,
+				7A5608741D7F1E9D00942111 /* GoogleService-Info.plist in Resources */,
+				7A56084D1D7F19D200942111 /* Assets.xcassets in Resources */,
+				7A94E4531D800C1F004044C5 /* Montserrat-SemiBold.otf in Resources */,
+				7A94E4561D801189004044C5 /* Podfile in Resources */,
+				7A56084B1D7F19D000942111 /* Main.storyboard in Resources */,
+				7A94E4511D800C1F004044C5 /* Montserrat-Medium.otf in Resources */,
+				7A94E44E1D800C1F004044C5 /* Montserrat-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5608541D7F19D200942111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A56085F1D7F19D200942111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C8B55F1D398D3B05F241F1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tictactoe/Pods-Tictactoe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ED353FF64E0421F2C5D5DD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TictactoeUITests/Pods-TictactoeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53B07C22EFA2632384D8A343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CACE67A75DF94E1CE3BF968 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TictactoeTests/Pods-TictactoeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C70CA131DB4DB1EE0133AA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TictactoeUITests/Pods-TictactoeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		895980979D2B03A585522A68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2EF5C39609CCBD54EF676B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D28D7823D236AE132B5F0E65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tictactoe/Pods-Tictactoe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB38EAC81B46EE8390F7FB6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TictactoeTests/Pods-TictactoeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A56083C1D7F19CF00942111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */,
+				7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */,
+				7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */,
+				7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */,
+				7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5608521D7F19D200942111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A56085B1D7F19D200942111 /* TictactoeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A56085D1D7F19D200942111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5608661D7F19D200942111 /* TictactoeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A5608581D7F19D200942111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A56083F1D7F19CF00942111 /* Tictactoe */;
+			targetProxy = 7A5608571D7F19D200942111 /* PBXContainerItemProxy */;
+		};
+		7A5608631D7F19D200942111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A56083F1D7F19CF00942111 /* Tictactoe */;
+			targetProxy = 7A5608621D7F19D200942111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A5608491D7F19D000942111 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A56084A1D7F19D000942111 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A56084E1D7F19D200942111 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A56084F1D7F19D200942111 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A5608681D7F19D200942111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A5608691D7F19D200942111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A56086B1D7F19D200942111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7382F318AE05CA56DCE39D /* Pods-Tictactoe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48P766KHT6;
+				INFOPLIST_FILE = Tictactoe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "W-C.Tictactoe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A56086C1D7F19D200942111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676ECB94A3DDD3F716944798 /* Pods-Tictactoe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48P766KHT6;
+				INFOPLIST_FILE = Tictactoe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "W-C.Tictactoe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7A56086E1D7F19D200942111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27CF2FA42806F07964E63EA0 /* Pods-TictactoeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 48P766KHT6;
+				INFOPLIST_FILE = TictactoeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "W-C.TictactoeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tictactoe.app/Tictactoe";
+			};
+			name = Debug;
+		};
+		7A56086F1D7F19D200942111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9ACE4C3CCECF2FC55CF13A /* Pods-TictactoeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 48P766KHT6;
+				INFOPLIST_FILE = TictactoeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "W-C.TictactoeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tictactoe.app/Tictactoe";
+			};
+			name = Release;
+		};
+		7A5608711D7F19D200942111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52972C7DF60D499B9AF26E9 /* Pods-TictactoeUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 48P766KHT6;
+				INFOPLIST_FILE = TictactoeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "W-C.TictactoeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tictactoe;
+			};
+			name = Debug;
+		};
+		7A5608721D7F19D200942111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BD07EFBB7E1B1A11A79FD6 /* Pods-TictactoeUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 48P766KHT6;
+				INFOPLIST_FILE = TictactoeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "W-C.TictactoeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Tictactoe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A56083B1D7F19CF00942111 /* Build configuration list for PBXProject "Tictactoe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A5608681D7F19D200942111 /* Debug */,
+				7A5608691D7F19D200942111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A56086A1D7F19D200942111 /* Build configuration list for PBXNativeTarget "Tictactoe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A56086B1D7F19D200942111 /* Debug */,
+				7A56086C1D7F19D200942111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A56086D1D7F19D200942111 /* Build configuration list for PBXNativeTarget "TictactoeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A56086E1D7F19D200942111 /* Debug */,
+				7A56086F1D7F19D200942111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A5608701D7F19D200942111 /* Build configuration list for PBXNativeTarget "TictactoeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A5608711D7F19D200942111 /* Debug */,
+				7A5608721D7F19D200942111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A5608381D7F19CF00942111 /* Project object */;
+}
