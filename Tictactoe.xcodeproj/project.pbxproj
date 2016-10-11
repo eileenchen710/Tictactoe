@@ -29,6 +29,13 @@
 		7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */; };
 		A803BE1699FF73C544592C3A /* Pods_TictactoeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */; };
 		C77C46627DFB6D906C4322FA /* Pods_TictactoeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */; };
+		EE3244235CF20B241C95A040 /* Pods_Tictactoe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741603D1141F5E3AFD215AAE /* Pods_Tictactoe.framework */; };
+		FE43EC251DAC837B00E3F035 /* PersonalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43EC241DAC837B00E3F035 /* PersonalPage.swift */; };
+		FE4C8D7E1DAB13B100C82238 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */; };
+		FE4C8D7F1DAB13B100C82238 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D7D1DAB13B100C82238 /* FBSDKLoginKit.framework */; };
+		FE4C8D821DAB13C000C82238 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */; };
+		FE4C8D831DAB13C000C82238 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */; };
+		FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +83,7 @@
 		7A94E44A1D800C1F004044C5 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "Fonts/Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		7A94E44B1D800C1F004044C5 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.otf"; path = "Fonts/Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		7A94E44C1D800C1F004044C5 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Thin.otf"; path = "Fonts/Montserrat-Thin.otf"; sourceTree = "<group>"; };
-		7A94E4551D801189004044C5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7A94E4551D801189004044C5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		7E9ACE4C3CCECF2FC55CF13A /* Pods-TictactoeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeTests/Pods-TictactoeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +91,13 @@
 		C52972C7DF60D499B9AF26E9 /* Pods-TictactoeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeUITests/Pods-TictactoeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TictactoeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TictactoeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE43EC241DAC837B00E3F035 /* PersonalPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalPage.swift; sourceTree = "<group>"; };
+		FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		FE4C8D7D1DAB13B100C82238 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKMessengerShareKit.framework"; sourceTree = "<group>"; };
+		FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
+		FEF939F51D86854C00FB53DC /* Tictactoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tictactoe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4C8D831DAB13C000C82238 /* FBSDKShareKit.framework in Frameworks */,
+				FE4C8D7F1DAB13B100C82238 /* FBSDKLoginKit.framework in Frameworks */,
+				FE4C8D821DAB13C000C82238 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				FE4C8D7E1DAB13B100C82238 /* FBSDKCoreKit.framework in Frameworks */,
+				EE3244235CF20B241C95A040 /* Pods_Tictactoe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,10 +157,12 @@
 		7A5608421D7F19D000942111 /* Tictactoe */ = {
 			isa = PBXGroup;
 			children = (
+				FEF939F51D86854C00FB53DC /* Tictactoe.entitlements */,
 				7AEFEF971D7FD09D009E65D8 /* Fonts */,
 				7A5608431D7F19D000942111 /* AppDelegate.swift */,
 				7A5608451D7F19D000942111 /* FirstViewController.swift */,
 				7A5608471D7F19D000942111 /* SecondViewController.swift */,
+				FE43EC241DAC837B00E3F035 /* PersonalPage.swift */,
 				7A5608731D7F1E9D00942111 /* GoogleService-Info.plist */,
 				7A5608491D7F19D000942111 /* Main.storyboard */,
 				7A56084C1D7F19D200942111 /* Assets.xcassets */,
@@ -149,6 +170,7 @@
 				7A5608511D7F19D200942111 /* Info.plist */,
 				7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */,
 				7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */,
+				FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */,
 			);
 			path = Tictactoe;
 			sourceTree = "<group>";
@@ -202,6 +224,10 @@
 		D2E48D30476A92521C078A50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */,
+				FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */,
+				FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */,
+				FE4C8D7D1DAB13B100C82238 /* FBSDKLoginKit.framework */,
 				7A94E4551D801189004044C5 /* Podfile */,
 				741603D1141F5E3AFD215AAE /* Pods_Tictactoe.framework */,
 				CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */,
@@ -289,6 +315,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 48P766KHT6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					7A5608551D7F19D200942111 = {
 						CreatedOnToolsVersion = 8.0;
@@ -404,7 +435,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6CACE67A75DF94E1CE3BF968 /* [CP] Embed Pods Frameworks */ = {
@@ -449,7 +480,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C2EF5C39609CCBD54EF676B0 /* [CP] Check Pods Manifest.lock */ = {
@@ -464,7 +495,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D28D7823D236AE132B5F0E65 /* [CP] Copy Pods Resources */ = {
@@ -506,8 +537,10 @@
 			files = (
 				7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */,
 				7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */,
+				FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */,
 				7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */,
 				7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */,
+				FE43EC251DAC837B00E3F035 /* PersonalPage.swift in Sources */,
 				7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -659,7 +692,16 @@
 			baseConfigurationReference = 8A7382F318AE05CA56DCE39D /* Pods-Tictactoe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tictactoe/Tictactoe.entitlements;
 				DEVELOPMENT_TEAM = 48P766KHT6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					/Users/wangyimin/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Tictactoe",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
 				INFOPLIST_FILE = Tictactoe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -675,7 +717,16 @@
 			baseConfigurationReference = 676ECB94A3DDD3F716944798 /* Pods-Tictactoe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tictactoe/Tictactoe.entitlements;
 				DEVELOPMENT_TEAM = 48P766KHT6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					/Users/wangyimin/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Tictactoe",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
 				INFOPLIST_FILE = Tictactoe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
