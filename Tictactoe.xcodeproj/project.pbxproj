@@ -160,7 +160,6 @@
 				FEF939F51D86854C00FB53DC /* Tictactoe.entitlements */,
 				7AEFEF971D7FD09D009E65D8 /* Fonts */,
 				7A5608431D7F19D000942111 /* AppDelegate.swift */,
-				FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */,
 				7A5608451D7F19D000942111 /* FirstViewController.swift */,
 				7A5608471D7F19D000942111 /* SecondViewController.swift */,
 				FE43EC241DAC837B00E3F035 /* PersonalPage.swift */,
@@ -171,6 +170,7 @@
 				7A5608511D7F19D200942111 /* Info.plist */,
 				7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */,
 				7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */,
+				FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */,
 			);
 			path = Tictactoe;
 			sourceTree = "<group>";

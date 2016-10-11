@@ -79,7 +79,11 @@
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQG-Qy-wsi"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQG-Qy-wsi">
+                                <connections>
+                                    <action selector="login:" destination="Gwy-rj-eR4" eventType="touchUpInside" id="dke-3S-73N"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0O9-L0-uPH">
                                 <frame key="frameInset" minX="211" minY="474" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -114,6 +118,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Login" destination="zQG-Qy-wsi" id="xZa-Ou-ATu"/>
                         <outlet property="email" destination="Cbc-7W-4ym" id="9SM-Gz-xdg"/>
                         <outlet property="password" destination="xv7-vu-CXK" id="yFh-pA-5Zc"/>
                         <segue destination="49e-Tb-3d3" kind="presentation" identifier="mainapp" id="Nyc-Lz-I2n"/>

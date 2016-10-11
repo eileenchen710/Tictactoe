@@ -20,6 +20,8 @@ class PersonalPage: UIViewController {
         
         FBSDKAccessToken.setCurrent(nil)
         
+        
+        
         let mianStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let viewController: UIViewController = mianStoryboard.instantiateViewController(withIdentifier: "Login View Controller")
