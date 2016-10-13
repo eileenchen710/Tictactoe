@@ -14,6 +14,8 @@ class SignupViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.view.endEditing(true)
+        
         email.attributedPlaceholder = NSAttributedString(string:"Email",
                                                          attributes:[NSForegroundColorAttributeName: UIColor.white])
         name.attributedPlaceholder = NSAttributedString(string:"Name",
@@ -36,6 +38,12 @@ class SignupViewController: UIViewController {
         guard let email_  = email.text, let password_ = password.text, let name_ = name.text
             else{
                 print("Form is not valid")
+                //定义一个弹出框
+                let alertView = UIAlertView()
+                alertView.delegate = self;
+                alertView.message = "Form is not valid"
+                alertView.addButton(withTitle: "OK")
+                alertView.show()
                 return
         }
         
@@ -43,7 +51,13 @@ class SignupViewController: UIViewController {
         FIRAuth.auth()?.createUser(withEmail: email_, password: password_, completion:{ (user: FIRUser?, error) in
                 if error != nil{
                     print(error)
-              //      return
+                    //定义一个弹出框
+                    let alertView = UIAlertView()
+                    alertView.delegate = self;
+                    alertView.message = "Form is not valid"
+                    alertView.addButton(withTitle: "OK")
+                    alertView.show()
+                    return
                 }
             //successfully authenticated user
             let ref = FIRDatabase.database().reference(fromURL: "https://tictactoe-d248f.firebaseio.com/")
@@ -53,10 +67,18 @@ class SignupViewController: UIViewController {
                 
                 if err != nil{
                     print(err)
+                    //定义一个弹出框
+                    let alertView = UIAlertView()
+                    alertView.delegate = self;
+                    alertView.message = "Something is wrong"
+                    alertView.addButton(withTitle: "OK")
+                    alertView.show()
                     return
                 }
-                
-                print("Save user successfully into Firebase db")
+                else{
+                    print("Save user successfully into Firebase db")
+                    self.performSegue(withIdentifier: "toHomepage", sender: self)
+                }
             })
             
         })

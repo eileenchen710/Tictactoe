@@ -16,6 +16,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        self.view.endEditing(true)
         email.attributedPlaceholder = NSAttributedString(string:"Email",
                                                              attributes:[NSForegroundColorAttributeName: UIColor.white])
         password.attributedPlaceholder = NSAttributedString(string:"Password",

@@ -25,16 +25,16 @@
 		7A94E4531D800C1F004044C5 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E44B1D800C1F004044C5 /* Montserrat-SemiBold.otf */; };
 		7A94E4541D800C1F004044C5 /* Montserrat-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E44C1D800C1F004044C5 /* Montserrat-Thin.otf */; };
 		7A94E4561D801189004044C5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7A94E4551D801189004044C5 /* Podfile */; };
+		7AB3FFCD1DAF4EBA0044E935 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB3FFC51DAF4C720044E935 /* FBSDKLoginKit.framework */; };
+		7AB3FFCE1DAF4EBA0044E935 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB3FFCB1DAF4CB30044E935 /* FBSDKCoreKit.framework */; };
+		7AB3FFCF1DAF4EBA0044E935 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB3FFC71DAF4C9B0044E935 /* FBSDKMessengerShareKit.framework */; };
+		7AB3FFD01DAF4EBA0044E935 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB3FFC81DAF4C9B0044E935 /* FBSDKShareKit.framework */; };
+		7AB3FFD21DAF51A80044E935 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB3FFD11DAF51A80044E935 /* Bolts.framework */; };
 		7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */; };
 		7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */; };
 		A803BE1699FF73C544592C3A /* Pods_TictactoeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */; };
 		C77C46627DFB6D906C4322FA /* Pods_TictactoeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */; };
-		EE3244235CF20B241C95A040 /* Pods_Tictactoe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741603D1141F5E3AFD215AAE /* Pods_Tictactoe.framework */; };
 		FE43EC251DAC837B00E3F035 /* PersonalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43EC241DAC837B00E3F035 /* PersonalPage.swift */; };
-		FE4C8D7E1DAB13B100C82238 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */; };
-		FE4C8D7F1DAB13B100C82238 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D7D1DAB13B100C82238 /* FBSDKLoginKit.framework */; };
-		FE4C8D821DAB13C000C82238 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */; };
-		FE4C8D831DAB13C000C82238 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */; };
 		FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +84,11 @@
 		7A94E44B1D800C1F004044C5 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.otf"; path = "Fonts/Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		7A94E44C1D800C1F004044C5 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Thin.otf"; path = "Fonts/Montserrat-Thin.otf"; sourceTree = "<group>"; };
 		7A94E4551D801189004044C5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7AB3FFC51DAF4C720044E935 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Pods/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7AB3FFC71DAF4C9B0044E935 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = Pods/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		7AB3FFC81DAF4C9B0044E935 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Pods/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7AB3FFCB1DAF4CB30044E935 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Pods/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7AB3FFD11DAF51A80044E935 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Pods/Bolts.framework; sourceTree = "<group>"; };
 		7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		7E9ACE4C3CCECF2FC55CF13A /* Pods-TictactoeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeTests/Pods-TictactoeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,10 +97,6 @@
 		CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TictactoeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TictactoeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE43EC241DAC837B00E3F035 /* PersonalPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalPage.swift; sourceTree = "<group>"; };
-		FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
-		FE4C8D7D1DAB13B100C82238 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
-		FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKMessengerShareKit.framework"; sourceTree = "<group>"; };
-		FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
 		FEF939F51D86854C00FB53DC /* Tictactoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tictactoe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,11 +106,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE4C8D831DAB13C000C82238 /* FBSDKShareKit.framework in Frameworks */,
-				FE4C8D7F1DAB13B100C82238 /* FBSDKLoginKit.framework in Frameworks */,
-				FE4C8D821DAB13C000C82238 /* FBSDKMessengerShareKit.framework in Frameworks */,
-				FE4C8D7E1DAB13B100C82238 /* FBSDKCoreKit.framework in Frameworks */,
-				EE3244235CF20B241C95A040 /* Pods_Tictactoe.framework in Frameworks */,
+				7AB3FFD21DAF51A80044E935 /* Bolts.framework in Frameworks */,
+				7AB3FFCD1DAF4EBA0044E935 /* FBSDKLoginKit.framework in Frameworks */,
+				7AB3FFCE1DAF4EBA0044E935 /* FBSDKCoreKit.framework in Frameworks */,
+				7AB3FFCF1DAF4EBA0044E935 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				7AB3FFD01DAF4EBA0044E935 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +225,11 @@
 		D2E48D30476A92521C078A50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */,
-				FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */,
-				FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */,
-				FE4C8D7D1DAB13B100C82238 /* FBSDKLoginKit.framework */,
+				7AB3FFD11DAF51A80044E935 /* Bolts.framework */,
+				7AB3FFCB1DAF4CB30044E935 /* FBSDKCoreKit.framework */,
+				7AB3FFC71DAF4C9B0044E935 /* FBSDKMessengerShareKit.framework */,
+				7AB3FFC81DAF4C9B0044E935 /* FBSDKShareKit.framework */,
+				7AB3FFC51DAF4C720044E935 /* FBSDKLoginKit.framework */,
 				7A94E4551D801189004044C5 /* Podfile */,
 				741603D1141F5E3AFD215AAE /* Pods_Tictactoe.framework */,
 				CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */,
@@ -695,12 +697,9 @@
 				CODE_SIGN_ENTITLEMENTS = Tictactoe/Tictactoe.entitlements;
 				DEVELOPMENT_TEAM = 48P766KHT6;
 				FRAMEWORK_SEARCH_PATHS = (
-					"<Multiple",
-					"values>",
-					/Users/wangyimin/Documents/FacebookSDK,
 					"$(PROJECT_DIR)/Tictactoe",
-					"$(inherited)",
 					"$(PROJECT_DIR)/Pods",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tictactoe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -720,12 +719,9 @@
 				CODE_SIGN_ENTITLEMENTS = Tictactoe/Tictactoe.entitlements;
 				DEVELOPMENT_TEAM = 48P766KHT6;
 				FRAMEWORK_SEARCH_PATHS = (
-					"<Multiple",
-					"values>",
-					/Users/wangyimin/Documents/FacebookSDK,
 					"$(PROJECT_DIR)/Tictactoe",
-					"$(inherited)",
 					"$(PROJECT_DIR)/Pods",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tictactoe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
