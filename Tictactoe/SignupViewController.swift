@@ -59,9 +59,14 @@ class SignupViewController: UIViewController {
                     alertView.show()
                     return
                 }
+            
+            guard let uid = user?.uid else{
+                return
+            }
+            
             //successfully authenticated user
             let ref = FIRDatabase.database().reference(fromURL: "https://tictactoe-d248f.firebaseio.com/")
-            let usersReference = ref.child("users")
+            let usersReference = ref.child("users").child(uid)
             let values = ["name": name_, "email": email_]
             usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
                 
@@ -70,7 +75,7 @@ class SignupViewController: UIViewController {
                     //定义一个弹出框
                     let alertView = UIAlertView()
                     alertView.delegate = self;
-                    alertView.message = "Something is wrong"
+                    alertView.message = "Fail to save into db"
                     alertView.addButton(withTitle: "OK")
                     alertView.show()
                     return
