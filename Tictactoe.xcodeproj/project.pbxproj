@@ -30,7 +30,14 @@
 		A803BE1699FF73C544592C3A /* Pods_TictactoeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */; };
 		C77C46627DFB6D906C4322FA /* Pods_TictactoeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */; };
 		EE3244235CF20B241C95A040 /* Pods_Tictactoe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741603D1141F5E3AFD215AAE /* Pods_Tictactoe.framework */; };
-		FE43EC251DAC837B00E3F035 /* PersonalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43EC241DAC837B00E3F035 /* PersonalPage.swift */; };
+		FE43EC251DAC837B00E3F035 /* PersonalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43EC241DAC837B00E3F035 /* PersonalPageViewController.swift */; };
+		FE43EC271DACAABF00E3F035 /* PostActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43EC261DACAABF00E3F035 /* PostActivityViewController.swift */; };
+		FE43EC291DACB6E100E3F035 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43EC281DACB6E100E3F035 /* MapViewController.swift */; };
+		FE43EC2B1DACD6A800E3F035 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE43EC2A1DACD6A800E3F035 /* SystemConfiguration.framework */; };
+		FE43EC371DACD71200E3F035 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE43EC361DACD71200E3F035 /* ImageIO.framework */; };
+		FE43EC391DACD71E00E3F035 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE43EC381DACD71E00E3F035 /* GLKit.framework */; };
+		FE43EC3B1DACD72700E3F035 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE43EC3A1DACD72700E3F035 /* CoreLocation.framework */; };
+		FE43EC3D1DACD73400E3F035 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE43EC3C1DACD73400E3F035 /* CoreData.framework */; };
 		FE4C8D7E1DAB13B100C82238 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */; };
 		FE4C8D7F1DAB13B100C82238 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D7D1DAB13B100C82238 /* FBSDKLoginKit.framework */; };
 		FE4C8D821DAB13C000C82238 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */; };
@@ -91,7 +98,21 @@
 		C52972C7DF60D499B9AF26E9 /* Pods-TictactoeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeUITests/Pods-TictactoeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TictactoeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AC5F0A4F7AE28C1991AD27 /* Pods_TictactoeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TictactoeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE43EC241DAC837B00E3F035 /* PersonalPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalPage.swift; sourceTree = "<group>"; };
+		FE43EC241DAC837B00E3F035 /* PersonalPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalPageViewController.swift; sourceTree = "<group>"; };
+		FE43EC261DACAABF00E3F035 /* PostActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostActivityViewController.swift; sourceTree = "<group>"; };
+		FE43EC281DACB6E100E3F035 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FE43EC2A1DACD6A800E3F035 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FE43EC2C1DACD6B100E3F035 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FE43EC2E1DACD6BF00E3F035 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FE43EC301DACD6EA00E3F035 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FE43EC321DACD6FE00E3F035 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		FE43EC341DACD70900E3F035 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FE43EC361DACD71200E3F035 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FE43EC381DACD71E00E3F035 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FE43EC3A1DACD72700E3F035 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FE43EC3C1DACD73400E3F035 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FE43EC3E1DACD73E00E3F035 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FE43EC401DACD7CA00E3F035 /* Tictactoe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tictactoe-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		FE4C8D7D1DAB13B100C82238 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKMessengerShareKit.framework"; sourceTree = "<group>"; };
@@ -105,6 +126,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE43EC3D1DACD73400E3F035 /* CoreData.framework in Frameworks */,
+				FE43EC3B1DACD72700E3F035 /* CoreLocation.framework in Frameworks */,
+				FE43EC391DACD71E00E3F035 /* GLKit.framework in Frameworks */,
+				FE43EC371DACD71200E3F035 /* ImageIO.framework in Frameworks */,
+				FE43EC2B1DACD6A800E3F035 /* SystemConfiguration.framework in Frameworks */,
 				FE4C8D831DAB13C000C82238 /* FBSDKShareKit.framework in Frameworks */,
 				FE4C8D7F1DAB13B100C82238 /* FBSDKLoginKit.framework in Frameworks */,
 				FE4C8D821DAB13C000C82238 /* FBSDKMessengerShareKit.framework in Frameworks */,
@@ -141,6 +167,7 @@
 				7A5608411D7F19D000942111 /* Products */,
 				7BA87D44A2992B30DB31867B /* Pods */,
 				D2E48D30476A92521C078A50 /* Frameworks */,
+				FE43EC401DACD7CA00E3F035 /* Tictactoe-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,9 +187,11 @@
 				FEF939F51D86854C00FB53DC /* Tictactoe.entitlements */,
 				7AEFEF971D7FD09D009E65D8 /* Fonts */,
 				7A5608431D7F19D000942111 /* AppDelegate.swift */,
+				FE43EC281DACB6E100E3F035 /* MapViewController.swift */,
+				FE43EC261DACAABF00E3F035 /* PostActivityViewController.swift */,
 				7A5608451D7F19D000942111 /* FirstViewController.swift */,
 				7A5608471D7F19D000942111 /* SecondViewController.swift */,
-				FE43EC241DAC837B00E3F035 /* PersonalPage.swift */,
+				FE43EC241DAC837B00E3F035 /* PersonalPageViewController.swift */,
 				7A5608731D7F1E9D00942111 /* GoogleService-Info.plist */,
 				7A5608491D7F19D000942111 /* Main.storyboard */,
 				7A56084C1D7F19D200942111 /* Assets.xcassets */,
@@ -224,6 +253,17 @@
 		D2E48D30476A92521C078A50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE43EC3E1DACD73E00E3F035 /* AVFoundation.framework */,
+				FE43EC3C1DACD73400E3F035 /* CoreData.framework */,
+				FE43EC3A1DACD72700E3F035 /* CoreLocation.framework */,
+				FE43EC381DACD71E00E3F035 /* GLKit.framework */,
+				FE43EC361DACD71200E3F035 /* ImageIO.framework */,
+				FE43EC341DACD70900E3F035 /* libc++.tbd */,
+				FE43EC321DACD6FE00E3F035 /* libicucore.tbd */,
+				FE43EC301DACD6EA00E3F035 /* libz.tbd */,
+				FE43EC2E1DACD6BF00E3F035 /* OpenGLES.framework */,
+				FE43EC2C1DACD6B100E3F035 /* QuartzCore.framework */,
+				FE43EC2A1DACD6A800E3F035 /* SystemConfiguration.framework */,
 				FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */,
 				FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */,
 				FE4C8D7C1DAB13B100C82238 /* FBSDKCoreKit.framework */,
@@ -314,6 +354,7 @@
 					7A56083F1D7F19CF00942111 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 48P766KHT6;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -537,10 +578,12 @@
 			files = (
 				7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */,
 				7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */,
+				FE43EC271DACAABF00E3F035 /* PostActivityViewController.swift in Sources */,
 				FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */,
+				FE43EC291DACB6E100E3F035 /* MapViewController.swift in Sources */,
 				7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */,
 				7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */,
-				FE43EC251DAC837B00E3F035 /* PersonalPage.swift in Sources */,
+				FE43EC251DAC837B00E3F035 /* PersonalPageViewController.swift in Sources */,
 				7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,6 +735,7 @@
 			baseConfigurationReference = 8A7382F318AE05CA56DCE39D /* Pods-Tictactoe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Tictactoe/Tictactoe.entitlements;
 				DEVELOPMENT_TEAM = 48P766KHT6;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -708,6 +752,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "W-C.Tictactoe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tictactoe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -717,6 +763,7 @@
 			baseConfigurationReference = 676ECB94A3DDD3F716944798 /* Pods-Tictactoe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Tictactoe/Tictactoe.entitlements;
 				DEVELOPMENT_TEAM = 48P766KHT6;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -733,6 +780,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "W-C.Tictactoe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tictactoe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

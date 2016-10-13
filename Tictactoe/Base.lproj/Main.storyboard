@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gwy-rj-eR4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -305,10 +305,37 @@
             </objects>
             <point key="canvasLocation" x="894" y="734"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="7Fl-R8-ePk">
+            <objects>
+                <viewController id="pUr-aF-0gh" customClass="MapViewController" customModule="Tictactoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wo9-R9-cW2"/>
+                        <viewControllerLayoutGuide type="bottom" id="j3Z-yo-VPz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="56q-uh-rcq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yKg-ld-BdO">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="yKg-ld-BdO" id="PBI-6p-nRA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlY-Sp-Zc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="-760.56971514242889"/>
+        </scene>
         <!--Add-->
         <scene sceneID="xZM-OS-qC5">
             <objects>
-                <viewController id="hFN-bR-PBh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Add" id="hFN-bR-PBh" customClass="PostActivityViewController" customModule="Tictactoe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YrE-YH-LUa"/>
                         <viewControllerLayoutGuide type="bottom" id="YRx-pf-h11"/>
@@ -316,13 +343,24 @@
                     <view key="view" contentMode="scaleToFill" id="0KZ-Wn-v9g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqs-NE-SvA">
+                                <frame key="frameInset" minX="243" minY="47" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Set Location"/>
+                                <connections>
+                                    <action selector="OpenMap:" destination="hFN-bR-PBh" eventType="touchUpInside" id="fbl-uU-rws"/>
+                                    <segue destination="pUr-aF-0gh" kind="presentation" identifier="map" id="hao-V6-iLO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" image="first" id="Ia3-IG-f7n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2h-dl-P09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="-65"/>
+            <point key="canvasLocation" x="960.79999999999995" y="-65.217391304347828"/>
         </scene>
         <!--Friends-->
         <scene sceneID="UAK-7N-vVB">

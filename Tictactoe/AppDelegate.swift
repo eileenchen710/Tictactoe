@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         FIRApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        //GMSServices.provideAPIKey("AIzaSyA_AmBhSr8guHk-R7dFSDId0ggwij_RH7M")
         // Override point for customization after application launch.
         // Use Firebase library to configure APIs
         return true
