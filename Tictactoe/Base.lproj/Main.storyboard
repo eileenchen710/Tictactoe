@@ -29,7 +29,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1202" y="-1160"/>
+            <point key="canvasLocation" x="-354" y="-1348"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-257" y="-837"/>
+            <point key="canvasLocation" x="500" y="-837"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Uc2-IH-DGw">
@@ -64,6 +64,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-eU-9Uw">
                                 <frame key="frameInset" width="375" height="667"/>
+                                <color key="tintColor" red="0.19215686274509805" green="0.23137254901960785" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cbc-7W-4ym">
                                 <frame key="frameInset" minX="67" minY="298" width="241" height="30"/>
@@ -96,9 +97,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEs-dH-fbj">
-                                <frame key="frameInset" minX="103" minY="512" width="168" height="30"/>
+                                <frame key="frameInset" minX="67" minY="512" width="241" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login with facebook"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Login with Facebook"/>
                                 <connections>
                                     <segue destination="Mqh-BU-Dcp" kind="show" id="CVn-Kv-t8C"/>
                                 </connections>
@@ -130,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsI-Ai-Ohz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1959.2" y="-65.217391304347828"/>
+            <point key="canvasLocation" x="-3098" y="-65"/>
         </scene>
         <!--FBLogin-->
         <scene sceneID="Pmw-2i-OeJ">
@@ -240,12 +242,12 @@
                         <outlet property="email" destination="ToX-mx-r41" id="0A2-Pm-1pU"/>
                         <outlet property="name" destination="lSU-Ct-Xps" id="d7F-ob-x7V"/>
                         <outlet property="password" destination="bxh-De-U4K" id="emI-zN-Pij"/>
-                        <segue destination="49e-Tb-3d3" kind="show" identifier="toHomepage" id="igN-Ys-zuQ"/>
+                        <segue destination="yeE-H0-3nI" kind="show" identifier="toPhoto" id="LYu-ZB-6Xh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFY-bH-XON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="-456"/>
+            <point key="canvasLocation" x="-2812" y="-823"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -267,7 +269,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-135" y="-65"/>
+            <point key="canvasLocation" x="-254" y="-65"/>
         </scene>
         <!--personal page-->
         <scene sceneID="J81-YW-yro">
@@ -362,13 +364,131 @@
             </objects>
             <point key="canvasLocation" x="-127" y="1403"/>
         </scene>
+        <!--Signup Photo View Controller-->
+        <scene sceneID="fP7-OE-Gd4">
+            <objects>
+                <viewController id="yeE-H0-3nI" customClass="SignupPhotoViewController" customModule="Tictactoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3vb-Da-WTh"/>
+                        <viewControllerLayoutGuide type="bottom" id="7NM-QF-j5h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UEd-l8-8mu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="signup2" translatesAutoresizingMaskIntoConstraints="NO" id="BQ4-bu-jRm">
+                                <frame key="frameInset" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nR-LO-kih">
+                                <frame key="frameInset" minX="45" minY="549" width="279" height="53"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnContinue_ClickWithSender:" destination="yeE-H0-3nI" eventType="touchUpInside" id="Y9z-dN-Rnl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQH-hU-fVp">
+                                <frame key="frameInset" minX="161" minY="423" width="46" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fE4-3u-Xbl" kind="show" id="iu5-ZK-RNU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgu-e2-NgT">
+                                <frame key="frameInset" minX="122" minY="245" width="131" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnUpload_ClickWithSender:" destination="yeE-H0-3nI" eventType="touchUpInside" id="QPD-7E-mYE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BQ4-bu-jRm" firstAttribute="leading" secondItem="UEd-l8-8mu" secondAttribute="leading" id="8bD-Z7-SEM"/>
+                            <constraint firstAttribute="trailing" secondItem="BQ4-bu-jRm" secondAttribute="trailing" id="PNo-77-Fjs"/>
+                            <constraint firstItem="BQ4-bu-jRm" firstAttribute="top" secondItem="3vb-Da-WTh" secondAttribute="bottom" id="PxO-YA-F47"/>
+                            <constraint firstItem="7NM-QF-j5h" firstAttribute="top" secondItem="9nR-LO-kih" secondAttribute="bottom" constant="76" id="Zeg-ET-SpB"/>
+                            <constraint firstItem="BQ4-bu-jRm" firstAttribute="bottom" secondItem="7NM-QF-j5h" secondAttribute="top" id="d59-91-c7y"/>
+                            <constraint firstItem="9nR-LO-kih" firstAttribute="leading" secondItem="UEd-l8-8mu" secondAttribute="leadingMargin" constant="29" id="hah-lR-bpr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="fE4-3u-Xbl" kind="show" identifier="toInterest" id="awq-Jw-yjD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irt-Y8-TP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2071.1999999999998" y="-822.63868065967017"/>
+        </scene>
+        <!--Signup Detail View Controller-->
+        <scene sceneID="Tsa-A7-kxc">
+            <objects>
+                <viewController id="fE4-3u-Xbl" customClass="SignupDetailViewController" customModule="Tictactoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4fW-9I-d22"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Ew-mb-AOq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WW4-k2-umP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="signup3" translatesAutoresizingMaskIntoConstraints="NO" id="eD9-xY-6JA">
+                                <frame key="frameInset" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oor-wE-SiP">
+                                <frame key="frameInset" minX="45" minY="549" width="279" height="53"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRegister_ClickWithSender:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="6F6-bd-0Bc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMc-KZ-Rb1">
+                                <frame key="frameInset" minX="161" minY="423" width="46" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="OuO-Kl-cVw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eD9-xY-6JA" firstAttribute="leading" secondItem="WW4-k2-umP" secondAttribute="leading" id="0xT-pj-itA"/>
+                            <constraint firstAttribute="trailing" secondItem="eD9-xY-6JA" secondAttribute="trailing" id="AFb-jB-gna"/>
+                            <constraint firstItem="eD9-xY-6JA" firstAttribute="bottom" secondItem="0Ew-mb-AOq" secondAttribute="top" id="DUF-aV-oYx"/>
+                            <constraint firstItem="0Ew-mb-AOq" firstAttribute="top" secondItem="Oor-wE-SiP" secondAttribute="bottom" constant="76" id="Uak-3I-eJG"/>
+                            <constraint firstItem="eD9-xY-6JA" firstAttribute="top" secondItem="4fW-9I-d22" secondAttribute="bottom" id="YDq-NL-9tA"/>
+                            <constraint firstItem="Oor-wE-SiP" firstAttribute="leading" secondItem="WW4-k2-umP" secondAttribute="leadingMargin" constant="29" id="bJZ-xL-PYQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="show" id="QBA-hu-BJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxl-Sa-aeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1370" y="-824"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="login" width="1280" height="2272"/>
         <image name="signup" width="750" height="1334"/>
+        <image name="signup2" width="750" height="1334"/>
+        <image name="signup3" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="igN-Ys-zuQ"/>
+        <segue reference="QBA-hu-BJw"/>
+        <segue reference="iu5-ZK-RNU"/>
     </inferredMetricsTieBreakers>
 </document>

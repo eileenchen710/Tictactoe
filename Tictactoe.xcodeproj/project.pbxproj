@@ -30,6 +30,8 @@
 		7AB3FFCF1DAF4EBA0044E935 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB3FFC71DAF4C9B0044E935 /* FBSDKMessengerShareKit.framework */; };
 		7AB3FFD01DAF4EBA0044E935 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB3FFC81DAF4C9B0044E935 /* FBSDKShareKit.framework */; };
 		7AB3FFD21DAF51A80044E935 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB3FFD11DAF51A80044E935 /* Bolts.framework */; };
+		7AB3FFD41DAF83120044E935 /* SignupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3FFD31DAF83120044E935 /* SignupDetailViewController.swift */; };
+		7AB3FFD61DAFC8D70044E935 /* SignupPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3FFD51DAFC8D70044E935 /* SignupPhotoViewController.swift */; };
 		7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */; };
 		7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */; };
 		A803BE1699FF73C544592C3A /* Pods_TictactoeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */; };
@@ -89,6 +91,8 @@
 		7AB3FFC81DAF4C9B0044E935 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Pods/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		7AB3FFCB1DAF4CB30044E935 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Pods/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7AB3FFD11DAF51A80044E935 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Pods/Bolts.framework; sourceTree = "<group>"; };
+		7AB3FFD31DAF83120044E935 /* SignupDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupDetailViewController.swift; sourceTree = "<group>"; };
+		7AB3FFD51DAFC8D70044E935 /* SignupPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupPhotoViewController.swift; sourceTree = "<group>"; };
 		7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		7E9ACE4C3CCECF2FC55CF13A /* Pods-TictactoeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeTests/Pods-TictactoeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,7 +175,9 @@
 				7A5608511D7F19D200942111 /* Info.plist */,
 				7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */,
 				7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */,
+				7AB3FFD31DAF83120044E935 /* SignupDetailViewController.swift */,
 				FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */,
+				7AB3FFD51DAFC8D70044E935 /* SignupPhotoViewController.swift */,
 			);
 			path = Tictactoe;
 			sourceTree = "<group>";
@@ -541,8 +547,10 @@
 				7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */,
 				FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */,
 				7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */,
+				7AB3FFD61DAFC8D70044E935 /* SignupPhotoViewController.swift in Sources */,
 				7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */,
 				FE43EC251DAC837B00E3F035 /* PersonalPage.swift in Sources */,
+				7AB3FFD41DAF83120044E935 /* SignupDetailViewController.swift in Sources */,
 				7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

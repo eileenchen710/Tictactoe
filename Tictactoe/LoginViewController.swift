@@ -56,6 +56,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    //Dismiss the keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     
 }
