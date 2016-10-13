@@ -31,6 +31,8 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func btnRegister_Click(sender: UIButton){
+        
+        
         guard let email_  = email.text, let password_ = password.text, let name_ = name.text
             else{
                 print("Form is not valid")
