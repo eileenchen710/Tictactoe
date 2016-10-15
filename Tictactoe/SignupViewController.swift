@@ -47,7 +47,8 @@ class SignupViewController: UIViewController {
                 }
             //successfully authenticated user
             let ref = FIRDatabase.database().reference(fromURL: "https://tictactoe-d248f.firebaseio.com/")
-            let usersReference = ref.child("users")
+            print("user id:", logUser.ID)
+            let usersReference = ref.child("users").child(logUser.ID)
             let values = ["name": name_, "email": email_]
             usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
                 
