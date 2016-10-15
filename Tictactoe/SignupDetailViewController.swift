@@ -14,7 +14,7 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
     var image = UIImage()
     var filePath = ""
     let fileManager = FileManager.default
-    
+    var interest: String = ""
     
     
     //checkbox
@@ -168,12 +168,48 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
     
     @IBAction func btnContinue_Click(sender: UIButton){
         
-        for i in 0...8 {
-            <#code#>
+        if isTravel == true{
+            interest += "Travel"
+        }
+        if isDating == true{
+            interest += ",Dating"
+        }
+        if isYoga == true{
+            interest += ",Yoga"
+        }
+        if isHiking == true{
+            interest += ",Hiking"
+        }
+        if isShopping == true{
+            interest += ",Shopping"
+        }
+        if isBBQ == true{
+            interest += ",BBQ"
+        }
+        if isBrunch == true{
+            interest += ",Brunch"
+        }
+        if isCat == true{
+            interest += ",Cat"
+        }
+        if isAlcohol == true{
+            interest += ",Alcohol"
+        }
+        
+        let ref = FIRDatabase.database().reference(fromURL: "https://tictactoe-d248f.firebaseio.com/")
+        let usersReference = ref.child("users").child(self.id)
+        
+        //上传兴趣
+        if interest != ""{
+            
+            let value1 = ["interest": self.interest]
+            usersReference.updateChildValues(value1)
+            
         }
         
         //上传图片
-        if(self.id != "" && self.image != nil){
+        if(self.image != nil){
+            
             if (fileManager.fileExists(atPath: filePath)){
                 
                 let storageRef = FIRStorage.storage().reference().child(id+"*myImage.jpg")
@@ -186,33 +222,32 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
                         }
                         print(metadata)
                         
-                        //将图片地址写入数据库
-                        let ref = FIRDatabase.database().reference(fromURL: "https://tictactoe-d248f.firebaseio.com/")
-                        let usersReference = ref.child("users").child(self.id)
-                        let values = ["profileImage": metadata?.downloadURL()]
-                        usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                        
+                        if let profileImageUrl = metadata?.downloadURL()?.absoluteString{
                             
-                            if err != nil{
-                                print(err)
-                                //定义一个弹出框
-                                let alertView = UIAlertView()
-                                alertView.delegate = self;
-                                alertView.message = "Fail to save into db"
-                                alertView.addButton(withTitle: "OK")
-                                alertView.show()
-                                return
-                            }
-                            else{
-                                print("Save user successfully into Firebase db")
-                            }
-                        })
-
+                            //将图片地址写入数据库
+                            let value2 = ["profileImage": profileImageUrl]
+                            usersReference.updateChildValues(value2, withCompletionBlock: { (err, ref) in
+                                
+                                if err != nil{
+                                    print(err)
+                                    return
+                                }
+                                else{
+                                    print("Save image successfully into Firebase db")
+                                }
+                            })
+                        }
+                    
                     })
                 }
             }
             
             
         }
+        
+        
+        
         print("Sucessfully Upload")
         
         self.performSegue(withIdentifier: "toHomepage", sender: self)
@@ -221,11 +256,6 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
     
     
     
-    @IBAction func btnSkip_Click(sender: UIButton){
-        
-        
-        
-    }
     
 }
 

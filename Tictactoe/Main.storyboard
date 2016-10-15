@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fE4-3u-Xbl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nvq-yP-0tF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -377,8 +377,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup2" translatesAutoresizingMaskIntoConstraints="NO" id="BQ4-bu-jRm"/>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQH-hU-fVp">
-                                <frame key="frameInset" minX="164" minY="464" width="46" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQH-hU-fVp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="E5K-oy-1rE"/>
+                                    <constraint firstAttribute="width" constant="46" id="Ebv-2i-SIV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Skip">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -387,17 +390,12 @@
                                     <segue destination="fE4-3u-Xbl" kind="show" id="Kre-uv-qdW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgu-e2-NgT">
-                                <frame key="frameInset" minX="79" minY="245" width="210" height="211"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgu-e2-NgT">
                                 <connections>
                                     <action selector="btnUpload_ClickWithSender:" destination="yeE-H0-3nI" eventType="touchUpInside" id="QPD-7E-mYE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="jwq-Kz-Wqy">
-                                <frame key="frameInset" minX="79" minY="245" width="210" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="jwq-Kz-Wqy"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEC-wd-wMi">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="Chg-t6-edS"/>
@@ -411,13 +409,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BQ4-bu-jRm" firstAttribute="leading" secondItem="UEd-l8-8mu" secondAttribute="leading" id="8bD-Z7-SEM"/>
+                            <constraint firstItem="lgu-e2-NgT" firstAttribute="top" secondItem="3vb-Da-WTh" secondAttribute="bottom" constant="225" id="8dE-ry-AHo"/>
+                            <constraint firstItem="lgu-e2-NgT" firstAttribute="trailing" secondItem="jwq-Kz-Wqy" secondAttribute="trailing" id="KPY-Ie-XTn"/>
+                            <constraint firstItem="jwq-Kz-Wqy" firstAttribute="leading" secondItem="lgu-e2-NgT" secondAttribute="leading" id="Lbb-1i-GCl"/>
                             <constraint firstAttribute="trailing" secondItem="BQ4-bu-jRm" secondAttribute="trailing" id="PNo-77-Fjs"/>
                             <constraint firstItem="BQ4-bu-jRm" firstAttribute="top" secondItem="3vb-Da-WTh" secondAttribute="bottom" constant="-20" id="PxO-YA-F47"/>
+                            <constraint firstItem="zQH-hU-fVp" firstAttribute="top" secondItem="lgu-e2-NgT" secondAttribute="bottom" constant="8" symbolic="YES" id="UKa-gt-he0"/>
+                            <constraint firstItem="zQH-hU-fVp" firstAttribute="centerX" secondItem="BQ4-bu-jRm" secondAttribute="centerX" id="Xjn-Kk-e3j"/>
                             <constraint firstItem="lEC-wd-wMi" firstAttribute="leading" secondItem="UEd-l8-8mu" secondAttribute="leadingMargin" constant="35" id="YFO-hZ-Xea"/>
+                            <constraint firstItem="jwq-Kz-Wqy" firstAttribute="centerY" secondItem="lgu-e2-NgT" secondAttribute="centerY" id="Zgz-qQ-63T"/>
+                            <constraint firstItem="jwq-Kz-Wqy" firstAttribute="top" secondItem="lgu-e2-NgT" secondAttribute="top" id="ap8-SQ-QXc"/>
                             <constraint firstItem="BQ4-bu-jRm" firstAttribute="bottom" secondItem="7NM-QF-j5h" secondAttribute="top" id="d59-91-c7y"/>
                             <constraint firstItem="7NM-QF-j5h" firstAttribute="top" secondItem="lEC-wd-wMi" secondAttribute="bottom" constant="69" id="dP2-tH-u5g"/>
                             <constraint firstItem="lEC-wd-wMi" firstAttribute="top" secondItem="zQH-hU-fVp" secondAttribute="bottom" constant="8" symbolic="YES" id="jCA-M7-Kil"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lEC-wd-wMi" secondAttribute="trailing" constant="33" id="qU1-HU-lWD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jwq-Kz-Wqy" secondAttribute="trailing" constant="70" id="srB-HG-WJU"/>
+                            <constraint firstItem="jwq-Kz-Wqy" firstAttribute="leading" secondItem="UEd-l8-8mu" secondAttribute="leadingMargin" constant="63" id="wOq-JG-miY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -488,6 +495,9 @@
                                 <state key="normal" backgroundImage="unchecked">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="click2:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="IYO-zY-0Cf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKY-Eg-RiX">
                                 <frame key="frameInset" minX="244" minY="253" width="108" height="48"/>
@@ -496,6 +506,9 @@
                                 <state key="normal" backgroundImage="unchecked">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="click3:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="2hh-Vv-Xd5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smG-OZ-HAW">
                                 <frame key="frameInset" minX="20" minY="309" width="108" height="48"/>
@@ -504,6 +517,9 @@
                                 <state key="normal" backgroundImage="unchecked">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="click4:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="4kz-BC-Ht6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9a-vH-U6S">
                                 <frame key="frameInset" minX="133" minY="309" width="108" height="48"/>
@@ -512,6 +528,9 @@
                                 <state key="normal" backgroundImage="unchecked">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="click5:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="XnF-zP-XKc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuN-fn-VM3">
                                 <frame key="frameInset" minX="245" minY="309" width="108" height="48"/>
@@ -520,6 +539,9 @@
                                 <state key="normal" backgroundImage="unchecked">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="click6:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="PoG-T0-hZh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRU-cR-DfR">
                                 <frame key="frameInset" minX="21" minY="365" width="108" height="48"/>
@@ -528,6 +550,9 @@
                                 <state key="normal" backgroundImage="unchecked">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="click7:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="xyI-1n-lLb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXc-B9-tuC">
                                 <frame key="frameInset" minX="134" minY="365" width="108" height="48"/>
@@ -536,6 +561,9 @@
                                 <state key="normal" backgroundImage="unchecked">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="click8:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="El1-fs-GAF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJp-UO-Irt">
                                 <frame key="frameInset" minX="246" minY="365" width="108" height="48"/>
@@ -544,6 +572,9 @@
                                 <state key="normal" backgroundImage="unchecked">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="click9:" destination="fE4-3u-Xbl" eventType="touchUpInside" id="LJI-Fc-bzT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Travel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-oQ-9OU">
                                 <frame key="frameInset" minX="21" minY="260" width="103" height="34"/>
@@ -588,7 +619,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7p5-aN-Bwk">
-                                <frame key="frameInset" minX="132" minY="260" width="103" height="34"/>
+                                <frame key="frameInset" minX="136" minY="260" width="103" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
