@@ -9,6 +9,7 @@ class SignupViewController: UIViewController {
     @IBOutlet var name: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var Register: UIButton!
+    var id: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +67,8 @@ class SignupViewController: UIViewController {
                     return
                 }
             
+            self.id = (user?.uid)!
+            
             guard let uid = user?.uid else{
                 return
             }
@@ -95,6 +98,13 @@ class SignupViewController: UIViewController {
         })
         
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        var nextVC: SignupPhotoViewController = segue.destination as! SignupPhotoViewController
+        nextVC.id = id
+    
     }
     
 }
