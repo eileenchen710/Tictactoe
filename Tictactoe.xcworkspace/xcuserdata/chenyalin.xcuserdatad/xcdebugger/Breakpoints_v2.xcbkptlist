@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215494.22679"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166">
+            startingLineNumber = "160"
+            endingLineNumber = "160">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215494.22679"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165">
+            startingLineNumber = "159"
+            endingLineNumber = "159">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -182,11 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215494.22679"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "login(_:)"
             landmarkType = "7">
             <Locations>
@@ -198,7 +198,7 @@
                   moduleName = "Tictactoe"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenyalin/Documents/Tictactoe/Tictactoe/LoginViewController.swift"
-                  timestampString = "498215494.498482"
+                  timestampString = "498217280.217559"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "94"
@@ -213,12 +213,12 @@
                   moduleName = "Tictactoe"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenyalin/Documents/Tictactoe/Tictactoe/LoginViewController.swift"
-                  timestampString = "498215494.500304"
+                  timestampString = "498217280.218894"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "94"
                   endingLineNumber = "94"
-                  offsetFromSymbolStart = "2440">
+                  offsetFromSymbolStart = "2576">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -230,11 +230,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/PersonalViewController.swift"
-            timestampString = "498212026.801056"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -246,44 +246,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/User.swift"
-            timestampString = "498212356.251623"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "getUserInfo()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215494.22679"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "login(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215280.412862"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "login(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -294,45 +262,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215494.22679"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "login(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tictactoe.LoginViewController.(login (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1).(closure #1)"
-                  moduleName = "Tictactoe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chenyalin/Documents/Tictactoe/Tictactoe/LoginViewController.swift"
-                  timestampString = "498215494.513127"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "472">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tictactoe.LoginViewController.(login (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1)"
-                  moduleName = "Tictactoe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chenyalin/Documents/Tictactoe/Tictactoe/LoginViewController.swift"
-                  timestampString = "498215494.514463"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "268">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -342,7 +278,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215534.73566"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
@@ -358,11 +294,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215541.285799"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "login(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -374,11 +310,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215542.645257"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "login(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -390,11 +326,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tictactoe/LoginViewController.swift"
-            timestampString = "498215570.240282"
+            timestampString = "498219492.874614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "login(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tictactoe/LoginViewController.swift"
+            timestampString = "498219492.874614"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "login(_:)"
             landmarkType = "7">
             <Locations>
@@ -406,12 +358,12 @@
                   moduleName = "Tictactoe"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenyalin/Documents/Tictactoe/Tictactoe/LoginViewController.swift"
-                  timestampString = "498215570.246889"
+                  timestampString = "498217280.239255"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "82"
                   endingLineNumber = "82"
-                  offsetFromSymbolStart = "280">
+                  offsetFromSymbolStart = "288">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -421,14 +373,142 @@
                   moduleName = "Tictactoe"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/chenyalin/Documents/Tictactoe/Tictactoe/LoginViewController.swift"
-                  timestampString = "498215570.250301"
+                  timestampString = "498217280.240632"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "83"
                   endingLineNumber = "83"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tictactoe/LoginViewController.swift"
+            timestampString = "498219492.874614"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "login(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tictactoe.LoginViewController.(login (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Tictactoe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenyalin/Documents/Tictactoe/Tictactoe/LoginViewController.swift"
+                  timestampString = "498217280.24477"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "1824">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tictactoe.LoginViewController.(login (Swift.AnyObject) -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Tictactoe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenyalin/Documents/Tictactoe/Tictactoe/LoginViewController.swift"
+                  timestampString = "498217280.246187"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tictactoe/LoginViewController.swift"
+            timestampString = "498219492.874614"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "login(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tictactoe/LoginViewController.swift"
+            timestampString = "498219492.874614"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "login(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tictactoe/LoginViewController.swift"
+            timestampString = "498219492.874614"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "login(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tictactoe/User.swift"
+            timestampString = "498219492.874614"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "initUserInfo(name:email:ID:interest:profileImage:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tictactoe/LoginViewController.swift"
+            timestampString = "498218526.712576"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "login(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

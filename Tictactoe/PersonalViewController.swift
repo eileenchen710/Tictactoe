@@ -18,6 +18,11 @@ class PersonalViewController: UIViewController {
         info = logUser.getUserInfo()
         name.text = (info["name"] as? String)!
         
+        
+        
+        //载入用户头像
+        profileImage.image = logUser.loadimage()
+        
         profileImage.layer.cornerRadius = 50
         profileImage.layer.masksToBounds = true
         //profileImage.image = self.image

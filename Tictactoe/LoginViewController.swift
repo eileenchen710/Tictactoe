@@ -67,12 +67,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         self.interest = (dictionary["interest"] as? String)!
                         self.profileImage = (dictionary["profileImage"] as? String)!
                         
-                        //初始化用户信息
-                        logUser.initUserInfo(name: self.name, email: self.useremail, ID:self.id, interest: self.interest, profileImage: self.profileImage)
                         
                         //下载图片到本地
-                        let url = URL(fileURLWithPath: self.profileImage)
-                        let task = URLSession.shared.dataTask(with: url as URL, completionHandler: {(data, response, error) in
+                        let url = URL(string: self.profileImage)
+                        let task = URLSession.shared.dataTask(with: url! as URL, completionHandler: {(data, response, error) in
                             //download hit an error so lets return out
                             if error != nil{
                                 print(error)
@@ -81,15 +79,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                             //下载图片
                             DispatchQueue.main.async(execute: {
                                 print(data?.description)
-                                //self.saveImageFile(image: UIImage(data: data!)!, path: self.fileInDocumentsDirectory(filename: "profileImage"))
+                                self.saveImageFile(image: UIImage(data: data!)!, path: self.fileInDocumentsDirectory(filename: self.id+"***profileImage"))
+                                
+                                //初始化用户信息
+                                logUser.initUserInfo(name: self.name, email: self.useremail, ID:self.id, interest: self.interest, profileImage: self.profileImage)
+                                
+                                //跳转页面
+                                self.performSegue(withIdentifier: "mainapp", sender: self)
+                                
+                                
                             })
                             
                             
                         })
                         task.resume()
                         
-                        //跳转页面
-                        self.performSegue(withIdentifier: "mainapp", sender: self)
+                        
                     }
                     }, withCancel: nil)
                 
@@ -117,17 +122,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func fileInDocumentsDirectory(filename: String) -> URL {
         return documentsDirectory().appendingPathComponent(filename)
-    }
-    //load image from path
-    func loadimage(path: String) -> UIImage {
-        let image = UIImage(contentsOfFile: path)
-        
-        if image == nil {
-            
-            print("missing image at: (path)")
-        }
-        //print("\(path)")
-        return image!
     }
     
 
