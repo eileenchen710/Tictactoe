@@ -8,8 +8,13 @@
 //
 
 import UIKit
+import Foundation
 
 class FirstViewController: UIViewController {
+    
+    @IBOutlet var list : UITableView!
+    
+    var row = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +26,7 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 

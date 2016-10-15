@@ -169,7 +169,7 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
     @IBAction func btnContinue_Click(sender: UIButton){
         
         if isTravel == true{
-            interest += "Travel"
+            interest += ",Travel"
         }
         if isDating == true{
             interest += ",Dating"
