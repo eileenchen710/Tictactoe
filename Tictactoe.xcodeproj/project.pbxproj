@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A1192A21DB204AB00CC60EB /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1192A11DB204AB00CC60EB /* PersonalViewController.swift */; };
+		7A1192A41DB209D400CC60EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1192A31DB209D400CC60EB /* User.swift */; };
 		7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608431D7F19D000942111 /* AppDelegate.swift */; };
 		7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608451D7F19D000942111 /* FirstViewController.swift */; };
 		7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608471D7F19D000942111 /* SecondViewController.swift */; };
@@ -62,6 +64,8 @@
 		44BD07EFBB7E1B1A11A79FD6 /* Pods-TictactoeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeUITests/Pods-TictactoeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		676ECB94A3DDD3F716944798 /* Pods-Tictactoe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tictactoe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tictactoe/Pods-Tictactoe.release.xcconfig"; sourceTree = "<group>"; };
 		741603D1141F5E3AFD215AAE /* Pods_Tictactoe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tictactoe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1192A11DB204AB00CC60EB /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		7A1192A31DB209D400CC60EB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A5608401D7F19D000942111 /* Tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5608431D7F19D000942111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A5608451D7F19D000942111 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -176,8 +180,10 @@
 				7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */,
 				7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */,
 				7AB3FFD31DAF83120044E935 /* SignupDetailViewController.swift */,
+				7A1192A31DB209D400CC60EB /* User.swift */,
 				FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */,
 				7AB3FFD51DAFC8D70044E935 /* SignupPhotoViewController.swift */,
+				7A1192A11DB204AB00CC60EB /* PersonalViewController.swift */,
 			);
 			path = Tictactoe;
 			sourceTree = "<group>";
@@ -549,9 +555,11 @@
 				7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */,
 				7AB3FFD61DAFC8D70044E935 /* SignupPhotoViewController.swift in Sources */,
 				7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */,
+				7A1192A21DB204AB00CC60EB /* PersonalViewController.swift in Sources */,
 				FE43EC251DAC837B00E3F035 /* PersonalPage.swift in Sources */,
 				7AB3FFD41DAF83120044E935 /* SignupDetailViewController.swift in Sources */,
 				7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */,
+				7A1192A41DB209D400CC60EB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
