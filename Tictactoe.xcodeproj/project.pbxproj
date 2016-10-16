@@ -44,6 +44,7 @@
 		FE4C8D821DAB13C000C82238 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */; };
 		FE4C8D831DAB13C000C82238 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */; };
 		FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */; };
+		FE5B1CB61DB3C7870009CEC2 /* ChatLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5B1CB51DB3C7870009CEC2 /* ChatLogViewController.swift */; };
 		FE5C71961DB3844400C239EF /* newMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C71951DB3844400C239EF /* newMessageViewController.swift */; };
 		FE5C71981DB39D2400C239EF /* allUserCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C71971DB39D2400C239EF /* allUserCellTableViewCell.swift */; };
 		FE8681011DB311E300F8BE07 /* JSQMessagesViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8680FF1DB311E300F8BE07 /* JSQMessagesViewController.framework */; };
@@ -130,6 +131,7 @@
 		FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKMessengerShareKit.framework"; sourceTree = "<group>"; };
 		FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
+		FE5B1CB51DB3C7870009CEC2 /* ChatLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogViewController.swift; sourceTree = "<group>"; };
 		FE5C71951DB3844400C239EF /* newMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newMessageViewController.swift; sourceTree = "<group>"; };
 		FE5C71971DB39D2400C239EF /* allUserCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allUserCellTableViewCell.swift; sourceTree = "<group>"; };
 		FE8680FF1DB311E300F8BE07 /* JSQMessagesViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQMessagesViewController.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tictactoe-aboshcjpdjualccndvnevjwwfsym/Build/Products/Debug-iphonesimulator/JSQMessagesViewController/JSQMessagesViewController.framework"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				7AEFEF971D7FD09D009E65D8 /* Fonts */,
 				7A5608431D7F19D000942111 /* AppDelegate.swift */,
 				FE5C71951DB3844400C239EF /* newMessageViewController.swift */,
+				FE5B1CB51DB3C7870009CEC2 /* ChatLogViewController.swift */,
 				FEDEC79F1DB36E700065483C /* MessageViewController.swift */,
 				FE43EC4C1DAFA16700E3F035 /* addactivity.swift */,
 				FE43EC281DACB6E100E3F035 /* MapViewController.swift */,
@@ -615,6 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5B1CB61DB3C7870009CEC2 /* ChatLogViewController.swift in Sources */,
 				7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */,
 				7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */,
 				FE43EC4D1DAFA16700E3F035 /* addactivity.swift in Sources */,
