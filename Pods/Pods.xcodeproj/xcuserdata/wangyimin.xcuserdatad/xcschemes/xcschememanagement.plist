@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JSQMessagesViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Tictactoe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,12 +32,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>01F28809268CC866CBEFD3AE1DBB0864</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0D95480B246AFE707918A2176D5097DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B5117C9876B2A230595653EF168FD62F</key>
+		<key>1ED4DFAAD25E1999D0244868457A351E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59CDDB315DD2B098E0CD9ED56B026F4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

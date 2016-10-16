@@ -133,6 +133,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UISearchBa
             let request = MKDirectionsRequest()
             request.source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: self.location.coordinate.latitude, longitude: self.location.coordinate.longitude), addressDictionary: nil))
             request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: actlatitude, longitude: actlongitude), addressDictionary: nil))
+            AddAct.locationlatitude = String(actlatitude)
+            AddAct.locationlongitude = String(actlongitude)
             request.requestsAlternateRoutes = false
             request.transportType = .automobile
             
@@ -163,8 +165,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UISearchBa
     }
     @IBAction func btnChooseLocation(_ sender: AnyObject) {
         // set the activity destination latitude and longitude
-        AddAct.locationlatitude = "\(self.mapView.centerCoordinate.latitude)"
-        AddAct.locationlongitude = "\(self.mapView.centerCoordinate.longitude)"
+//        AddAct.locationlatitude = actlatitude
+//        AddAct.locationlongitude = actlongitude
         self.performSegue(withIdentifier: "returnpostactivity", sender: self)
     }
     

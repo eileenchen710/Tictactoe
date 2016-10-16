@@ -6,7 +6,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 source 'https://github.com/CocoaPods/Specs.git'
 pod 'GoogleMaps'
-
+pod 'JSQMessagesViewController'
 target 'Tictactoe' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!

@@ -31,17 +31,19 @@ class addactivity: NSObject, CLLocationManagerDelegate {
     var locationlongitude = ""
     var desc = ""
     var num = ""
-    var creator = ""   //save id
-    var createtime = ""
+    var image = ""
+    var creatorName = ""
+    var creatorID = ""   //save id
+    var creatTime = ""
     
-    func saveToDB(name: String, Stime: String, Etime: String, locationname: String, locationlatitude: String, locationlongitude: String, desc: String, num: String, creator: String) ->Void {
+    func saveToDB(name: String, Stime: String, Etime: String, locationname: String, locationlatitude: String, locationlongitude: String, desc: String, num: String, creatorID: String, creatorName: String, image: String) ->Void {
         
-        let activityid = creator + createtime
+        let activityid = creatorID + creatTime
         
         let ref = FIRDatabase.database().reference(fromURL: "https://tictactoe-d248f.firebaseio.com/")
         //use user id and time as the id of activity
         let usersReference = ref.child("activity").child(activityid)
-        let values = ["name": name, "Stime": Stime, "Etime": Etime, "locationname": locationname, "locationlatitude": locationlatitude, "locationlongitude": locationlongitude, "desc": desc,"num": num, "creator": creator]
+        let values = ["name": name, "Stime": Stime, "Etime": Etime, "locationname": locationname, "locationlatitude": locationlatitude, "locationlongitude": locationlongitude, "desc": desc,"num": num, "creatorID": creatorID, "creatorName": creatorName, "creatTime": creatTime, "image": image]
         usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
             if err != nil{
                 print(err)

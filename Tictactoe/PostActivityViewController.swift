@@ -8,9 +8,16 @@
 
 
 import UIKit
+import Firebase
+import AssetsLibrary
+import Photos
+import PhotosUI
+import MobileCoreServices
+import CoreData
 
 
-class PostActivityViewController: UIViewController {
+
+class PostActivityViewController: UIViewController, UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var SetLocation: UIButton!
     
@@ -22,6 +29,12 @@ class PostActivityViewController: UIViewController {
     @IBOutlet weak var actDescription: UITextField!
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var btnCancel: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var btnAddImage: UIButton!
+    
+    
+    var imagePicker = UIImagePickerController()
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +49,7 @@ class PostActivityViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let timestring = formatter.string(from: time as Date)
-        AddAct.createtime = timestring
+        AddAct.creatTime = timestring
 
     }
     
@@ -87,6 +100,76 @@ class PostActivityViewController: UIViewController {
         AddAct.desc = actDescription.text!
         self.performSegue(withIdentifier: "map", sender: self)
     }
+    //add image
+    @IBAction func btnAImage(_ sender: UIButton) {
+        let actionSheet = UIActionSheet()
+        actionSheet.addButton(withTitle: "Cancel")
+        actionSheet.addButton(withTitle: "Camera")
+        actionSheet.addButton(withTitle: "Photo Library")
+        actionSheet.cancelButtonIndex=0
+        actionSheet.delegate = self
+        actionSheet.show(in: self.view);
+    }
+    
+    func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt buttonIndex: Int) {
+        print("点击了："+actionSheet.buttonTitle(at: buttonIndex)!)
+        if(buttonIndex == 1){
+            //打开相机
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+            present(imagePicker, animated: true, completion: nil)
+            
+        }
+        
+        if(buttonIndex == 2){
+            //打开相册
+            //判断设置是否支持图片库
+            if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+                //初始化图片控制器
+                let picker = UIImagePickerController()
+                //设置代理
+                picker.delegate = self
+                picker.allowsEditing = true
+                //指定图片控制器类型
+                picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+                //弹出控制器，显示界面
+                self.present(picker, animated: true, completion: {
+                    () -> Void in
+                })
+            }else{
+                print("读取相册错误")
+            }
+            
+        }
+    }
+    
+    
+    //选择图片成功后代理
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        //获取选择的图片
+        var selectedImageFromPicker: UIImage?
+        
+        if let editedImage = info[UIImagePickerControllerEditedImage] {
+            selectedImageFromPicker = editedImage as? UIImage
+        }else if let originalImage = info[UIImagePickerControllerOriginalImage]{
+            selectedImageFromPicker = originalImage as? UIImage
+        }
+        
+        
+        //将图片载入imageview
+        if let selectedImage = selectedImageFromPicker {
+            imageView.layer.cornerRadius = 105
+            imageView.layer.masksToBounds = true
+            imageView.image = selectedImage
+            
+            
+            
+        }
+        
+        
+        //图片控制器退出
+        picker.dismiss(animated: true, completion:nil)
+    }
     
     //ADD NEW ONE
     @IBAction func SaveActivity(_ sender: AnyObject) {
@@ -98,16 +181,43 @@ class PostActivityViewController: UIViewController {
             AddAct.Etime = endTime.text!
             AddAct.num = numPeople.text!
             AddAct.desc = actDescription.text!
-            AddAct.creator = logUser.ID
-            AddAct.saveToDB(name: AddAct.name, Stime: AddAct.Stime, Etime: AddAct.Etime, locationname: AddAct.locationname, locationlatitude: AddAct.locationlatitude, locationlongitude: AddAct.locationlongitude, desc: AddAct.desc, num: AddAct.num, creator: AddAct.creator)
-            self.performSegue(withIdentifier: "savetotabbarcontroller", sender: self)
+            AddAct.creatorID = logUser.ID
+            AddAct.creatorName = logUser.name
+            var imageurlstring = ""
             
-            AddAct.name = ""
-            AddAct.Stime = ""
-            AddAct.Etime = ""
-            AddAct.num = ""
-            AddAct.desc = ""
-            AddAct.creator = ""
+            //将图片存入storage
+            let storageRef = FIRStorage.storage().reference().child(AddAct.creatorID + AddAct.creatTime)
+            if let uploadData = UIImagePNGRepresentation(imageView.image!){
+                storageRef.put(uploadData, metadata:nil, completion:{(metadata, error) in
+                    
+                    if error != nil {
+                        print("this is error:",error)
+                        return
+                    }
+                    print("this is metadata:",metadata)
+                    
+                    
+                    if let profileImageUrl = metadata?.downloadURL()?.absoluteString{
+                        
+                        //获取图片storage 地址
+                        AddAct.image = profileImageUrl
+                        print("this is the image url in the firebase", profileImageUrl)
+                        AddAct.saveToDB(name: AddAct.name, Stime: AddAct.Stime, Etime: AddAct.Etime, locationname: AddAct.locationname, locationlatitude: AddAct.locationlatitude, locationlongitude: AddAct.locationlongitude, desc: AddAct.desc, num: AddAct.num, creatorID: AddAct.creatorID, creatorName: AddAct.creatorName, image: profileImageUrl)
+                        
+                        
+                        AddAct.name = ""
+                        AddAct.Stime = ""
+                        AddAct.Etime = ""
+                        AddAct.num = ""
+                        AddAct.desc = ""
+                        AddAct.creatorID = ""
+                        AddAct.creatorName = ""
+                        AddAct.image = ""
+                    }
+                    
+                })
+            }
+           
 
         }else
         {
@@ -141,8 +251,12 @@ class PostActivityViewController: UIViewController {
                                         AddAct.Etime = ""
                                         AddAct.num = ""
                                         AddAct.desc = ""
-                                        AddAct.creator = ""
-                                        
+                                        AddAct.creatorID = ""
+                                        AddAct.creatorName = ""
+                                        AddAct.creatTime = ""
+                                        AddAct.locationname = ""
+                                        AddAct.locationlatitude = ""
+                                        AddAct.locationlongitude = ""
                                         self.view.endEditing(true)
                                         self.performSegue(withIdentifier: "canceltotabbarcontroller", sender: self)
                                         

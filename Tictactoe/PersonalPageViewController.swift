@@ -36,4 +36,10 @@ class PersonalPage: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func gotoChat(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "gotoMessage", sender: self)
+        
+    }
 }

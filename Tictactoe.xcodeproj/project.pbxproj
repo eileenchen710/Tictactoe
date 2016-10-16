@@ -44,8 +44,16 @@
 		FE4C8D821DAB13C000C82238 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */; };
 		FE4C8D831DAB13C000C82238 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */; };
 		FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */; };
-		FE8ABAB11DB2411000C71D7E /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8ABAB01DB2411000C71D7E /* ChatLogController.swift */; };
+		FE5C71961DB3844400C239EF /* newMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C71951DB3844400C239EF /* newMessageViewController.swift */; };
+		FE5C71981DB39D2400C239EF /* allUserCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C71971DB39D2400C239EF /* allUserCellTableViewCell.swift */; };
+		FE8681011DB311E300F8BE07 /* JSQMessagesViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8680FF1DB311E300F8BE07 /* JSQMessagesViewController.framework */; };
+		FE8681021DB311E300F8BE07 /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8681001DB311E300F8BE07 /* JSQSystemSoundPlayer.framework */; };
+		FE8681051DB32E1800F8BE07 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8681031DB32E1800F8BE07 /* Photos.framework */; };
+		FE8681061DB32E1800F8BE07 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8681041DB32E1800F8BE07 /* PhotosUI.framework */; };
+		FE8681081DB32E2500F8BE07 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8681071DB32E2500F8BE07 /* AssetsLibrary.framework */; };
 		FE985D561DB1EED0009E99CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE985D551DB1EED0009E99CF /* User.swift */; };
+		FEDEC79E1DB33A000065483C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDEC79D1DB33A000065483C /* MobileCoreServices.framework */; };
+		FEDEC7A01DB36E700065483C /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEC79F1DB36E700065483C /* MessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +130,16 @@
 		FE4C8D801DAB13C000C82238 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKMessengerShareKit.framework"; sourceTree = "<group>"; };
 		FE4C8D811DAB13C000C82238 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		FE4C8D841DAB153700C82238 /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
-		FE8ABAB01DB2411000C71D7E /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		FE5C71951DB3844400C239EF /* newMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newMessageViewController.swift; sourceTree = "<group>"; };
+		FE5C71971DB39D2400C239EF /* allUserCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allUserCellTableViewCell.swift; sourceTree = "<group>"; };
+		FE8680FF1DB311E300F8BE07 /* JSQMessagesViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQMessagesViewController.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tictactoe-aboshcjpdjualccndvnevjwwfsym/Build/Products/Debug-iphonesimulator/JSQMessagesViewController/JSQMessagesViewController.framework"; sourceTree = "<group>"; };
+		FE8681001DB311E300F8BE07 /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQSystemSoundPlayer.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tictactoe-aboshcjpdjualccndvnevjwwfsym/Build/Products/Debug-iphonesimulator/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"; sourceTree = "<group>"; };
+		FE8681031DB32E1800F8BE07 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		FE8681041DB32E1800F8BE07 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		FE8681071DB32E2500F8BE07 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		FE985D551DB1EED0009E99CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEDEC79D1DB33A000065483C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FEDEC79F1DB36E700065483C /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		FEF939F51D86854C00FB53DC /* Tictactoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tictactoe.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +148,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDEC79E1DB33A000065483C /* MobileCoreServices.framework in Frameworks */,
+				FE8681081DB32E2500F8BE07 /* AssetsLibrary.framework in Frameworks */,
+				FE8681051DB32E1800F8BE07 /* Photos.framework in Frameworks */,
+				FE8681061DB32E1800F8BE07 /* PhotosUI.framework in Frameworks */,
+				FE8681011DB311E300F8BE07 /* JSQMessagesViewController.framework in Frameworks */,
+				FE8681021DB311E300F8BE07 /* JSQSystemSoundPlayer.framework in Frameworks */,
 				FE43EC3D1DACD73400E3F035 /* CoreData.framework in Frameworks */,
 				FE43EC3B1DACD72700E3F035 /* CoreLocation.framework in Frameworks */,
 				FE43EC391DACD71E00E3F035 /* GLKit.framework in Frameworks */,
@@ -193,10 +215,12 @@
 				FEF939F51D86854C00FB53DC /* Tictactoe.entitlements */,
 				7AEFEF971D7FD09D009E65D8 /* Fonts */,
 				7A5608431D7F19D000942111 /* AppDelegate.swift */,
+				FE5C71951DB3844400C239EF /* newMessageViewController.swift */,
+				FEDEC79F1DB36E700065483C /* MessageViewController.swift */,
 				FE43EC4C1DAFA16700E3F035 /* addactivity.swift */,
 				FE43EC281DACB6E100E3F035 /* MapViewController.swift */,
-				FE8ABAB01DB2411000C71D7E /* ChatLogController.swift */,
 				FE43EC261DACAABF00E3F035 /* PostActivityViewController.swift */,
+				FE5C71971DB39D2400C239EF /* allUserCellTableViewCell.swift */,
 				7A5608451D7F19D000942111 /* FirstViewController.swift */,
 				7A5608471D7F19D000942111 /* SecondViewController.swift */,
 				FE43EC241DAC837B00E3F035 /* PersonalPageViewController.swift */,
@@ -262,6 +286,12 @@
 		D2E48D30476A92521C078A50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FEDEC79D1DB33A000065483C /* MobileCoreServices.framework */,
+				FE8681071DB32E2500F8BE07 /* AssetsLibrary.framework */,
+				FE8681031DB32E1800F8BE07 /* Photos.framework */,
+				FE8681041DB32E1800F8BE07 /* PhotosUI.framework */,
+				FE8680FF1DB311E300F8BE07 /* JSQMessagesViewController.framework */,
+				FE8681001DB311E300F8BE07 /* JSQSystemSoundPlayer.framework */,
 				FE43EC3E1DACD73E00E3F035 /* AVFoundation.framework */,
 				FE43EC3C1DACD73400E3F035 /* CoreData.framework */,
 				FE43EC3A1DACD72700E3F035 /* CoreLocation.framework */,
@@ -585,17 +615,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8ABAB11DB2411000C71D7E /* ChatLogController.swift in Sources */,
 				7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */,
 				7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */,
 				FE43EC4D1DAFA16700E3F035 /* addactivity.swift in Sources */,
 				FE43EC271DACAABF00E3F035 /* PostActivityViewController.swift in Sources */,
+				FE5C71961DB3844400C239EF /* newMessageViewController.swift in Sources */,
 				FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */,
 				FE43EC291DACB6E100E3F035 /* MapViewController.swift in Sources */,
 				7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */,
+				FE5C71981DB39D2400C239EF /* allUserCellTableViewCell.swift in Sources */,
 				7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */,
 				FE43EC251DAC837B00E3F035 /* PersonalPageViewController.swift in Sources */,
 				7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */,
+				FEDEC7A01DB36E700065483C /* MessageViewController.swift in Sources */,
 				FE985D561DB1EED0009E99CF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
