@@ -12,7 +12,6 @@
 		7A1192AB1DB3000F00CC60EB /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1192AA1DB3000F00CC60EB /* CustomCellTableViewCell.swift */; };
 		7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608431D7F19D000942111 /* AppDelegate.swift */; };
 		7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608451D7F19D000942111 /* FirstViewController.swift */; };
-		7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5608471D7F19D000942111 /* SecondViewController.swift */; };
 		7A56084D1D7F19D200942111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A56084C1D7F19D200942111 /* Assets.xcassets */; };
 		7A5608501D7F19D200942111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A56084E1D7F19D200942111 /* LaunchScreen.storyboard */; };
 		7A56085B1D7F19D200942111 /* TictactoeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56085A1D7F19D200942111 /* TictactoeTests.swift */; };
@@ -36,6 +35,8 @@
 		7AB3FFD61DAFC8D70044E935 /* SignupPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3FFD51DAFC8D70044E935 /* SignupPhotoViewController.swift */; };
 		7ACE31861DB1B57000FC36EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE31851DB1B57000FC36EB /* Main.storyboard */; };
 		7AE361771DB31AE5008D2556 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE361761DB31AE5008D2556 /* Activity.swift */; };
+		7AE3617A1DB384D8008D2556 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE361791DB384D8008D2556 /* HomeViewController.swift */; };
+		7AE3617E1DB389AC008D2556 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3617D1DB389AC008D2556 /* HomeViewCell.swift */; };
 		7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */; };
 		7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */; };
 		A803BE1699FF73C544592C3A /* Pods_TictactoeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD205E4282D128566BA444A8 /* Pods_TictactoeTests.framework */; };
@@ -71,7 +72,6 @@
 		7A5608401D7F19D000942111 /* Tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5608431D7F19D000942111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A5608451D7F19D000942111 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7A5608471D7F19D000942111 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7A56084C1D7F19D200942111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A56084F1D7F19D200942111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A5608511D7F19D200942111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +100,8 @@
 		7AB3FFD51DAFC8D70044E935 /* SignupPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupPhotoViewController.swift; sourceTree = "<group>"; };
 		7ACE31851DB1B57000FC36EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7AE361761DB31AE5008D2556 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		7AE361791DB384D8008D2556 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7AE3617D1DB389AC008D2556 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		7AEFEF981D7FD350009E65D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7AEFEF9A1D7FDBDE009E65D8 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		7E9ACE4C3CCECF2FC55CF13A /* Pods-TictactoeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TictactoeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TictactoeTests/Pods-TictactoeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,7 +175,6 @@
 				7AEFEF971D7FD09D009E65D8 /* Fonts */,
 				7A5608431D7F19D000942111 /* AppDelegate.swift */,
 				7A5608451D7F19D000942111 /* FirstViewController.swift */,
-				7A5608471D7F19D000942111 /* SecondViewController.swift */,
 				7A5608731D7F1E9D00942111 /* GoogleService-Info.plist */,
 				7A56084C1D7F19D200942111 /* Assets.xcassets */,
 				7A56084E1D7F19D200942111 /* LaunchScreen.storyboard */,
@@ -187,6 +188,8 @@
 				7A1192A11DB204AB00CC60EB /* PersonalViewController.swift */,
 				7A1192AA1DB3000F00CC60EB /* CustomCellTableViewCell.swift */,
 				7AE361761DB31AE5008D2556 /* Activity.swift */,
+				7AE361791DB384D8008D2556 /* HomeViewController.swift */,
+				7AE3617D1DB389AC008D2556 /* HomeViewCell.swift */,
 			);
 			path = Tictactoe;
 			sourceTree = "<group>";
@@ -554,15 +557,16 @@
 			files = (
 				7AEFEF991D7FD350009E65D8 /* LoginViewController.swift in Sources */,
 				7A1192AB1DB3000F00CC60EB /* CustomCellTableViewCell.swift in Sources */,
-				7A5608481D7F19D000942111 /* SecondViewController.swift in Sources */,
 				FE4C8D851DAB153700C82238 /* FBLoginViewController.swift in Sources */,
 				7A5608441D7F19D000942111 /* AppDelegate.swift in Sources */,
 				7AB3FFD61DAFC8D70044E935 /* SignupPhotoViewController.swift in Sources */,
 				7AEFEF9B1D7FDBDE009E65D8 /* SignupViewController.swift in Sources */,
 				7A1192A21DB204AB00CC60EB /* PersonalViewController.swift in Sources */,
+				7AE3617E1DB389AC008D2556 /* HomeViewCell.swift in Sources */,
 				7AB3FFD41DAF83120044E935 /* SignupDetailViewController.swift in Sources */,
 				7A5608461D7F19D000942111 /* FirstViewController.swift in Sources */,
 				7AE361771DB31AE5008D2556 /* Activity.swift in Sources */,
+				7AE3617A1DB384D8008D2556 /* HomeViewController.swift in Sources */,
 				7A1192A41DB209D400CC60EB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

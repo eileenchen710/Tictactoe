@@ -147,15 +147,6 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //将选择的图片保存到Document目录下
-        if(logUser.ID != "" && image != nil){
-            
-            let rootPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
-            filePath = "\(rootPath)/***profileImage"
-            let imageData = UIImageJPEGRepresentation(image, 1.0)
-            fileManager.createFile(atPath: filePath, contents: imageData, attributes: nil)
-            
-        }
         
     }
     
@@ -205,6 +196,11 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
             usersReference.updateChildValues(value1)
             
         }
+        //写入本地
+        logUser.interest = interest
+        
+        
+        
         
         //上传图片
         if(self.image != nil){

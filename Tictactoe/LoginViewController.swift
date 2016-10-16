@@ -99,6 +99,42 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     }
                     }, withCancel: nil)
                 
+                //读取所有用户头像并保存到本地
+                let ref_ = FIRDatabase.database().reference().child("users")
+                ref_.observe(.childAdded, with: { (snapshot) in
+                    print(snapshot)
+                    
+                    if let dictionary = snapshot.value as? [String: AnyObject]{
+                        
+                        let imagePath = (dictionary["profileImage"] as? String)!
+                        let localPath = self.fileInDocumentsDirectory(filename: (dictionary["name"] as? String)!)
+                        
+                        //下载图片到本地
+                        let url = URL(string: imagePath)
+                        let task = URLSession.shared.dataTask(with: url! as URL, completionHandler: {(data, response, error) in
+                            //download hit an error so lets return out
+                            if error != nil{
+                                print(error)
+                                return
+                            }
+                            //下载图片
+                            DispatchQueue.main.async(execute: {
+                                print(data?.description)
+                                
+                                self.saveImageFile(image: UIImage(data: data!)!, path: localPath)
+                                print("save in localPath:"+localPath.absoluteString)
+                                
+                            })
+                            
+                            
+                        })
+                        task.resume()
+                        
+                    }
+                    
+                    }, withCancel: nil)
+
+                
                 
                 //读取所有activities
                 let ref = FIRDatabase.database().reference().child("activity")

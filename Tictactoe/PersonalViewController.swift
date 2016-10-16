@@ -41,13 +41,13 @@ class PersonalViewController: UIViewController,UIActionSheetDelegate, UIImagePic
             //载入用户兴趣
             let splitedArray = interest.components(separatedBy: ",")
             
-            interest1.setTitle(splitedArray[0], for: UIControlState.normal)
+            interest1.setTitle(splitedArray[1], for: UIControlState.normal)
             if(splitedArray.count != 1){
-                interest2.setTitle(splitedArray[1], for: UIControlState.normal)
+                interest2.setTitle(splitedArray[2], for: UIControlState.normal)
                 if(splitedArray.count != 2){
-                    interest3.setTitle(splitedArray[2], for: UIControlState.normal)
+                    interest3.setTitle(splitedArray[3], for: UIControlState.normal)
                     if(splitedArray.count != 3){
-                        interest4.setTitle(splitedArray[3], for: UIControlState.normal)
+                        interest4.setTitle(splitedArray[4], for: UIControlState.normal)
                     }
                 }
                 

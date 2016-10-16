@@ -9,6 +9,8 @@
 import Foundation
 
 var activities = [Activity]()
+var homeActivities = [Activity]()
+var myActivities = [Activity]()
 
 class Activity: NSObject{
     var name = ""
@@ -25,5 +27,6 @@ class Activity: NSObject{
     var image = ""
     
     var imageLocalPath = ""
+    var distance = ""
     
 }

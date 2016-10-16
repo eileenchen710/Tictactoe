@@ -12,6 +12,8 @@ class SignupPhotoViewController: UIViewController, UIActionSheetDelegate, UIImag
     @IBOutlet var imageView: UIImageView!
     var imagePicker = UIImagePickerController()
     var image = UIImage()
+    var filePath = ""
+    let fileManager = FileManager.default
     
     
     override func viewDidLoad() {
@@ -99,6 +101,18 @@ class SignupPhotoViewController: UIViewController, UIActionSheetDelegate, UIImag
     
     
     @IBAction func btnContinue_Click(sender: UIButton){
+        
+        //将选择的图片保存到Document目录下
+        if(logUser.ID != "" && image != nil){
+            
+            let rootPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
+            filePath = "\(rootPath)/" + logUser.ID + "***profileImage"
+            let imageData = UIImageJPEGRepresentation(image, 1.0)
+            fileManager.createFile(atPath: filePath, contents: imageData, attributes: nil)
+            
+            
+        }
+        
         self.performSegue(withIdentifier: "toDetail", sender: self)
     }
 
@@ -108,6 +122,7 @@ class SignupPhotoViewController: UIViewController, UIActionSheetDelegate, UIImag
         
         var nextVC2: SignupDetailViewController = segue.destination as! SignupDetailViewController
         nextVC2.image = self.image
+        nextVC2.filePath = self.filePath
         
     }
     
