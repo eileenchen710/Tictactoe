@@ -1,6 +1,7 @@
 
 import UIKit
 import Firebase
+import FBSDKCoreKit
 
 
 class PersonalViewController: UIViewController,UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -17,15 +18,12 @@ class PersonalViewController: UIViewController,UIActionSheetDelegate, UIImagePic
     
     var imagePicker = UIImagePickerController()
     var image = UIImage()
+    var interest = ""
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+    override func viewWillAppear(_ animated: Bool) {
         info = logUser.getUserInfo()
         name.text = (info["name"] as? String)!
-        let interest = (info["interest"] as? String)!
+        interest = (info["interest"] as? String)!
         
         
         
@@ -57,6 +55,13 @@ class PersonalViewController: UIViewController,UIActionSheetDelegate, UIImagePic
             
             
         }
+        
+
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
         
         
@@ -144,6 +149,20 @@ class PersonalViewController: UIViewController,UIActionSheetDelegate, UIImagePic
         picker.dismiss(animated: true, completion:nil)
     }
 
+    @IBAction func didTapLogout(_ sender: AnyObject) {
+        try! FIRAuth.auth()!.signOut()
+        
+        FBSDKAccessToken.setCurrent(nil)
+        
+        
+        
+        let mianStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let viewController: UIViewController = mianStoryboard.instantiateViewController(withIdentifier: "Login View Controller")
+        
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
     
     
 }

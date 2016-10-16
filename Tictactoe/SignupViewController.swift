@@ -9,7 +9,6 @@ class SignupViewController: UIViewController {
     @IBOutlet var name: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var Register: UIButton!
-    var id: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +66,7 @@ class SignupViewController: UIViewController {
                     return
                 }
             
-            self.id = (user?.uid)!
+            logUser.ID = (user?.uid)!
             
             guard let uid = user?.uid else{
                 return
@@ -78,6 +77,9 @@ class SignupViewController: UIViewController {
             let usersReference = ref.child("users").child(uid)
             let values = ["name": name_, "email": email_]
             usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                
+                logUser.email = email_
+                logUser.name = name_
                 
                 if err != nil{
                     print(err)
@@ -103,7 +105,6 @@ class SignupViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         var nextVC: SignupPhotoViewController = segue.destination as! SignupPhotoViewController
-        nextVC.id = id
     
     }
     

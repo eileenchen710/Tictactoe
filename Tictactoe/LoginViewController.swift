@@ -19,6 +19,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var interest = ""
     var profileImage = ""
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -96,6 +97,42 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         
                         
                     }
+                    }, withCancel: nil)
+                
+                
+                //读取所有activities
+                let ref = FIRDatabase.database().reference().child("activity")
+                ref.observe(.childAdded, with: { (snapshot) in
+                    print(snapshot)
+                    
+                    if let dictionary = snapshot.value as? [String: AnyObject]{
+                        
+                        let imagePath = (dictionary["image"] as? String)!
+                        let localPath = self.fileInDocumentsDirectory(filename: (dictionary["creatTime"] as? String)!)
+                        
+                        //下载图片到本地
+                        let url = URL(string: imagePath)
+                        let task = URLSession.shared.dataTask(with: url! as URL, completionHandler: {(data, response, error) in
+                            //download hit an error so lets return out
+                            if error != nil{
+                                print(error)
+                                return
+                            }
+                            //下载图片
+                            DispatchQueue.main.async(execute: {
+                                print(data?.description)
+                                
+                                self.saveImageFile(image: UIImage(data: data!)!, path: localPath)
+                                print("save in localPath:"+localPath.absoluteString)
+                                
+                            })
+                            
+                            
+                        })
+                        task.resume()
+                        
+                    }
+                    
                     }, withCancel: nil)
                 
             

@@ -10,7 +10,6 @@ import CoreData
 
 class SignupDetailViewController: UIViewController, UINavigationControllerDelegate {
     
-    var id = ""
     var image = UIImage()
     var filePath = ""
     let fileManager = FileManager.default
@@ -149,10 +148,10 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
         // Do any additional setup after loading the view, typically from a nib.
         
         //将选择的图片保存到Document目录下
-        if(id != "" && image != nil){
+        if(logUser.ID != "" && image != nil){
             
             let rootPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
-            filePath = "\(rootPath)/selectedImage.jpg"
+            filePath = "\(rootPath)/***profileImage"
             let imageData = UIImageJPEGRepresentation(image, 1.0)
             fileManager.createFile(atPath: filePath, contents: imageData, attributes: nil)
             
@@ -197,7 +196,7 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
         }
         
         let ref = FIRDatabase.database().reference(fromURL: "https://tictactoe-d248f.firebaseio.com/")
-        let usersReference = ref.child("users").child(self.id)
+        let usersReference = ref.child("users").child(logUser.ID)
         
         //上传兴趣
         if interest != ""{
@@ -212,7 +211,7 @@ class SignupDetailViewController: UIViewController, UINavigationControllerDelega
             
             if (fileManager.fileExists(atPath: filePath)){
                 
-                let storageRef = FIRStorage.storage().reference().child(id+"*myImage.jpg")
+                let storageRef = FIRStorage.storage().reference().child(logUser.ID+"*myImage.jpg")
                 if let uploadData = UIImagePNGRepresentation(image){
                     storageRef.put(uploadData, metadata:nil, completion:{(metadata, error) in
                         

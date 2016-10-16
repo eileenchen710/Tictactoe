@@ -11,7 +11,6 @@ class SignupPhotoViewController: UIViewController, UIActionSheetDelegate, UIImag
     
     @IBOutlet var imageView: UIImageView!
     var imagePicker = UIImagePickerController()
-    var id = ""
     var image = UIImage()
     
     
@@ -19,7 +18,6 @@ class SignupPhotoViewController: UIViewController, UIActionSheetDelegate, UIImag
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print(id)
     }
     
     
@@ -109,7 +107,6 @@ class SignupPhotoViewController: UIViewController, UIActionSheetDelegate, UIImag
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         var nextVC2: SignupDetailViewController = segue.destination as! SignupDetailViewController
-        nextVC2.id = id
         nextVC2.image = self.image
         
     }
